@@ -1,0 +1,16 @@
+//
+//  XCF.pch
+//  XCF
+//
+//  Created by  Mac on 16/5/3.
+//  Copyright © 2016年 dalpha. All rights reserved.
+//
+
+/// 屏幕尺寸相关
+#define ScreenBounds [UIScreen mainScreen].bounds]
+#define ScreenWidth [UIScreen mainScreen].bounds].size.width
+#define ScreenHeight [UIScreen mainScreen].bounds].size.height
+
+
+//颜色相关
+#define RandomColor [UIColor colorWithRed:(arc4random_uniform(255) / 255.0) green:(arc4random_uniform(255) / 255.0) blue:(arc4random_uniform(255) / 255.0) alpha:1.0]
