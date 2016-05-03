@@ -18,39 +18,81 @@
 
 @implementation XCFMainViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-   
-    //添加子控制器
-    [self setupChildControllers];
+
++ (void)load{
+    
+    UITabBarItem *item = [UITabBarItem appearance];
+    
+    NSDictionary *normalAttrDict = @{
+                                     
+                                     NSForegroundColorAttributeName : [UIColor grayColor]
+                                     };
+    
+    [item setTitleTextAttributes:normalAttrDict forState:UIControlStateNormal];
+    
+    NSDictionary *selectedAttrDict = @{
+                                       
+                                       NSForegroundColorAttributeName : ThemeColor
+                                       
+                                       };
+    
+    [item setTitleTextAttributes:selectedAttrDict forState:UIControlStateSelected];
     
 }
 
-#pragma mark - setupChildControllers
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.tabBar.barTintColor = [UIColor whiteColor];
+    
+    //设置子控制器
+    [self setupChildControllers];
+    
+    //设置TabBar上的按钮
+    [self setupTabBarButtons];
+    
+}
+
+#pragma mark - 设置子控制器
 - (void)setupChildControllers{
     
-    XCFHomeViewController *homeViewController = [[XCFHomeViewController alloc] init];
-    homeViewController.view.backgroundColor = RandomColor;
-    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeViewController];
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:[[XCFHomeViewController alloc] init]];
     [self addChildViewController:homeNav];
     
-    XCFMarketViewController *marketViewController = [[XCFMarketViewController alloc] init];
-    marketViewController.view.backgroundColor = RandomColor;
-    marketViewController.title = @"市集";
-    UINavigationController *marketNav = [[UINavigationController alloc] initWithRootViewController:marketViewController];
+    UINavigationController *marketNav = [[UINavigationController alloc] initWithRootViewController:[[XCFMarketViewController alloc] init]];
     [self addChildViewController:marketNav];
     
-    XCFCommunityViewController *communityViewController = [[XCFCommunityViewController alloc] init];
-    communityViewController.view.backgroundColor = RandomColor;
-    communityViewController.title = @"社区";
-    UINavigationController *communityNav = [[UINavigationController alloc] initWithRootViewController:communityViewController];
+    UINavigationController *communityNav = [[UINavigationController alloc] initWithRootViewController:[[XCFCommunityViewController alloc] init]];
     [self addChildViewController:communityNav];
     
-    XCFProfileViewController *profileViewController = [[XCFProfileViewController alloc] init];
-    profileViewController.view.backgroundColor = RandomColor;
-    profileViewController.title = @"我";
-    UINavigationController *profileNav = [[UINavigationController alloc] initWithRootViewController:profileViewController];
+    UINavigationController *profileNav = [[UINavigationController alloc] initWithRootViewController:[[XCFProfileViewController alloc] init]];
     [self addChildViewController:profileNav];
+    
+}
+
+#pragma mark - 设置TabBar上的按钮
+- (void)setupTabBarButtons{
+    
+    UINavigationController *homeNav = self.childViewControllers[0];
+    homeNav.tabBarItem.title = @"下厨房";
+    homeNav.tabBarItem.image = [UIImage originalImageWithImageName:@"tabADeselected_25x25_"];
+    homeNav.tabBarItem.selectedImage = [UIImage originalImageWithImageName:@"tabASelected_25x25_"];
+    
+    UINavigationController *marketNav = self.childViewControllers[1];
+    marketNav.tabBarItem.title = @"市集";
+    marketNav.tabBarItem.image = [UIImage originalImageWithImageName:@"tabBDeselected_25x25_"];
+    marketNav.tabBarItem.selectedImage = [UIImage originalImageWithImageName:@"tabBSelected_25x25_"];
+    
+    UINavigationController *communityNav = self.childViewControllers[2];
+    communityNav.tabBarItem.title = @"社区";
+    communityNav.tabBarItem.image = [UIImage originalImageWithImageName:@"tabCDeselected_25x25_"];
+    communityNav.tabBarItem.selectedImage = [UIImage originalImageWithImageName:@"tabCSelected_25x25_"];
+    
+    UINavigationController *profileNav = self.childViewControllers[3];
+    profileNav.tabBarItem.title = @"我";
+    profileNav.tabBarItem.image = [UIImage originalImageWithImageName:@"tabDDeselected_25x25_"];
+    profileNav.tabBarItem.selectedImage = [UIImage originalImageWithImageName:@"tabDSelected_25x25_"];
     
 }
 

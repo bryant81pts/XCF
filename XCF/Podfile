@@ -6,8 +6,8 @@ platform :ios, '8.0'
 pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'MJRefresh'
-pod 'Mantle'
 pod 'Masonry'
+pod 'Mantle'
 
 target 'XCF' do
 
