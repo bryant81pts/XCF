@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "XCFMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    XCFMainViewController *mainViewController = [[XCFMainViewController alloc] init];
+    
+    self.window.rootViewController = mainViewController;
+    
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

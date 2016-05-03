@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  XCFMainViewController.h
 //  XCF
 //
 //  Created by  Mac on 16/5/3.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface XCFMainViewController : UITabBarController
 
 @end
-
