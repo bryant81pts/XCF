@@ -27,8 +27,8 @@
 - (void)setupNavigationBar{
     
     self.navigationItem.title = @"我";
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIView navigationBarButtonViewWithImage:[UIImage imageNamed:@"navFindFriendsImage_22x22_"] taget:self action:@selector(findFriendButtonClick)]];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIView navigationBarButtonViewWithImage:[UIImage imageNamed:@"rightPageSetting_22x22_"] taget:self action:@selector(settingButtonClick)]];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"navFindFriendsImage_22x22_"] taget:self action:@selector(findFriendButtonClick)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"rightPageSetting_22x22_"] taget:self action:@selector(settingButtonClick)];
     
     
 }

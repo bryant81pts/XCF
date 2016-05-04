@@ -28,7 +28,7 @@
     
     
     self.navigationItem.title = @"社区";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIView navigationBarButtonViewWithImage:[UIImage imageNamed:@"notification_22x22_"] taget:self action:@selector(notificationButtonClick)]];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"notification_22x22_"] taget:self action:@selector(notificationButtonClick)];
     
     
 }

@@ -27,9 +27,9 @@
 #pragma mark - 设置导航栏
 - (void)setupNavigationBar{
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIView navigationBarButtonViewWithImage:[UIImage imageNamed:@"leftPageButtonBackgroundNormal_22x22_"] taget:self action:@selector(marketCategoryButtonClick)]];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"leftPageButtonBackgroundNormal_22x22_"] taget:self action:@selector(marketCategoryButtonClick)];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIView navigationBarButtonViewWithImage:[UIImage imageNamed:@"shoppingCart_22x22_"] taget:self action:@selector(shoppingCartButtonClick)]];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"shoppingCart_22x22_"] taget:self action:@selector(shoppingCartButtonClick)];
     
     UISearchBar *searchBar = [[UISearchBar alloc] init];
     searchBar.placeholder = @"搜索商品";

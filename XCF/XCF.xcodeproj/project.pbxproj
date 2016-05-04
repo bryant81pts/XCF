@@ -19,9 +19,9 @@
 		046142761CD8C9FB005F0419 /* XCFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046142741CD8C9FB005F0419 /* XCFLoginViewController.xib */; };
 		046142791CD8CA8C005F0419 /* XCFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046142781CD8CA8C005F0419 /* XCFSettingViewController.m */; };
 		0461427C1CD8CAA0005F0419 /* XCFProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461427B1CD8CAA0005F0419 /* XCFProfileViewController.m */; };
+		0461427F1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461427E1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.m */; };
 		04EEDC3A1CD880AA00AA64EF /* XCFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEDC391CD880AA00AA64EF /* XCFMainViewController.m */; };
 		6B401B9A1CD8E63400BD162A /* UIImage+OriginalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B401B991CD8E63400BD162A /* UIImage+OriginalImage.m */; };
-		6BA747C21CD9017B008B53E8 /* UIView+NavigationBarButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA747C11CD9017B008B53E8 /* UIView+NavigationBarButtonView.m */; };
 		6E4959DFDB6FC364539775A1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7D087F8A70688F75A6C7C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -49,12 +49,12 @@
 		046142781CD8CA8C005F0419 /* XCFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFSettingViewController.m; sourceTree = "<group>"; };
 		0461427A1CD8CAA0005F0419 /* XCFProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFProfileViewController.h; sourceTree = "<group>"; };
 		0461427B1CD8CAA0005F0419 /* XCFProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFProfileViewController.m; sourceTree = "<group>"; };
+		0461427D1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CustomItem.h"; sourceTree = "<group>"; };
+		0461427E1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CustomItem.m"; sourceTree = "<group>"; };
 		04EEDC381CD880AA00AA64EF /* XCFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFMainViewController.h; sourceTree = "<group>"; };
 		04EEDC391CD880AA00AA64EF /* XCFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFMainViewController.m; sourceTree = "<group>"; };
 		6B401B981CD8E63400BD162A /* UIImage+OriginalImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OriginalImage.h"; sourceTree = "<group>"; };
 		6B401B991CD8E63400BD162A /* UIImage+OriginalImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OriginalImage.m"; sourceTree = "<group>"; };
-		6BA747C01CD9017B008B53E8 /* UIView+NavigationBarButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NavigationBarButtonView.h"; sourceTree = "<group>"; };
-		6BA747C11CD9017B008B53E8 /* UIView+NavigationBarButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NavigationBarButtonView.m"; sourceTree = "<group>"; };
 		780FE1FEE880992158D50094 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A7B7D087F8A70688F75A6C7C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -326,8 +326,8 @@
 			children = (
 				6B401B981CD8E63400BD162A /* UIImage+OriginalImage.h */,
 				6B401B991CD8E63400BD162A /* UIImage+OriginalImage.m */,
-				6BA747C01CD9017B008B53E8 /* UIView+NavigationBarButtonView.h */,
-				6BA747C11CD9017B008B53E8 /* UIView+NavigationBarButtonView.m */,
+				0461427D1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.h */,
+				0461427E1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -458,13 +458,13 @@
 			files = (
 				0461426E1CD8C93F005F0419 /* XCFMarketViewController.m in Sources */,
 				044730191CD84BB100673F92 /* AppDelegate.m in Sources */,
+				0461427F1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.m in Sources */,
 				046142711CD8C995005F0419 /* XCFCommunityViewController.m in Sources */,
 				046142791CD8CA8C005F0419 /* XCFSettingViewController.m in Sources */,
 				046142751CD8C9FB005F0419 /* XCFLoginViewController.m in Sources */,
 				044730161CD84BB100673F92 /* main.m in Sources */,
 				6B401B9A1CD8E63400BD162A /* UIImage+OriginalImage.m in Sources */,
 				04EEDC3A1CD880AA00AA64EF /* XCFMainViewController.m in Sources */,
-				6BA747C21CD9017B008B53E8 /* UIView+NavigationBarButtonView.m in Sources */,
 				0461426B1CD8C720005F0419 /* XCFHomeViewController.m in Sources */,
 				0461427C1CD8CAA0005F0419 /* XCFProfileViewController.m in Sources */,
 			);

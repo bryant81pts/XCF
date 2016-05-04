@@ -26,9 +26,9 @@
 #pragma mark - 设置导航栏
 - (void)setupNavigationBar{
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIView navigationBarButtonViewWithImage:[UIImage imageNamed:@"homepageCreateRecipeButton_22x22_"] taget:self action:@selector(createRecipeButtonClick)]];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"homepageCreateRecipeButton_22x22_"] taget:self action:@selector(createRecipeButtonClick)];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIView navigationBarButtonViewWithImage:[UIImage imageNamed:@"buylistButtonImage_22x22_"] taget:self action:@selector(buyListButtonClick)]];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"buylistButtonImage_22x22_"] taget:self action:@selector(buyListButtonClick)];
     
     UISearchBar *searchBar = [[UISearchBar alloc] init];
     searchBar.placeholder = @"菜谱、食材";

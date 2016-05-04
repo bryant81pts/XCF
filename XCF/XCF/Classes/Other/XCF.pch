@@ -19,7 +19,7 @@
 
 //头文件
 #import "UIImage+OriginalImage.h"
-#import "UIView+NavigationBarButtonView.h"
+#import "UIBarButtonItem+CustomItem.h"
 
 
 // ...:宏里面可变参数

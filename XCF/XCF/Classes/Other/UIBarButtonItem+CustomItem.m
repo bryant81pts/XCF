@@ -1,16 +1,16 @@
 //
-//  UIView+NavigationBarButtonView.m
+//  UIBarButtonItem+CustomItem.m
 //  XCF
 //
-//  Created by daalphahwz on 16/5/3.
+//  Created by  Mac on 16/5/4.
 //  Copyright © 2016年 dalpha. All rights reserved.
 //
 
-#import "UIView+NavigationBarButtonView.h"
+#import "UIBarButtonItem+CustomItem.h"
 
-@implementation UIView (NavigationBarButtonView)
+@implementation UIBarButtonItem (CustomItem)
 
-+ (UIView *)navigationBarButtonViewWithImage:(UIImage *)image taget:(id)target action:(SEL)action{
++ (UIBarButtonItem *)customItemWithImage:(UIImage *)image taget:(id)target action:(SEL)action{
     
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -21,7 +21,8 @@
     [placeholderView addSubview:button];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     
-    return placeholderView;
+    return [[UIBarButtonItem alloc] initWithCustomView:placeholderView];
+    
 }
 
 
