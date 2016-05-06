@@ -11,6 +11,7 @@
 #import "XCFMarketViewController.h"
 #import "XCFCommunityViewController.h"
 #import "XCFProfileViewController.h"
+#import "XCFNavigationController.h"
 
 @interface XCFMainViewController ()
 
@@ -19,23 +20,17 @@
 @implementation XCFMainViewController
 
 
+//设置TabBar的样式
 + (void)load{
     
-    UITabBarItem *item = [UITabBarItem appearance];
+    UITabBarItem *item = [UITabBarItem appearanceWhenContainedInInstancesOfClasses:@[self]];
     
-    NSDictionary *normalAttrDict = @{
-                                     
-                                     NSForegroundColorAttributeName : [UIColor grayColor]
-                                     };
-    
+    NSMutableDictionary *normalAttrDict = [NSMutableDictionary dictionary];
+    normalAttrDict[NSForegroundColorAttributeName] = [UIColor grayColor];
     [item setTitleTextAttributes:normalAttrDict forState:UIControlStateNormal];
     
-    NSDictionary *selectedAttrDict = @{
-                                       
-                                       NSForegroundColorAttributeName : ThemeColor
-                                       
-                                       };
-    
+    NSMutableDictionary *selectedAttrDict = [NSMutableDictionary dictionary];
+    selectedAttrDict[NSForegroundColorAttributeName] = ThemeColor;
     [item setTitleTextAttributes:selectedAttrDict forState:UIControlStateSelected];
     
 }
@@ -57,16 +52,16 @@
 #pragma mark - 设置子控制器
 - (void)setupChildControllers{
     
-    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:[[XCFHomeViewController alloc] init]];
+    XCFNavigationController *homeNav = [[XCFNavigationController alloc] initWithRootViewController:[[XCFHomeViewController alloc] init]];
     [self addChildViewController:homeNav];
     
-    UINavigationController *marketNav = [[UINavigationController alloc] initWithRootViewController:[[XCFMarketViewController alloc] init]];
+    XCFNavigationController *marketNav = [[XCFNavigationController alloc] initWithRootViewController:[[XCFMarketViewController alloc] init]];
     [self addChildViewController:marketNav];
     
-    UINavigationController *communityNav = [[UINavigationController alloc] initWithRootViewController:[[XCFCommunityViewController alloc] init]];
+    XCFNavigationController *communityNav = [[XCFNavigationController alloc] initWithRootViewController:[[XCFCommunityViewController alloc] init]];
     [self addChildViewController:communityNav];
     
-    UINavigationController *profileNav = [[UINavigationController alloc] initWithRootViewController:[[XCFProfileViewController alloc] init]];
+    XCFNavigationController *profileNav = [[XCFNavigationController alloc] initWithRootViewController:[[XCFProfileViewController alloc] init]];
     [self addChildViewController:profileNav];
     
 }

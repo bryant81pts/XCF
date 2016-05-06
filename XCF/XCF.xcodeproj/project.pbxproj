@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		044730161CD84BB100673F92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044730151CD84BB100673F92 /* main.m */; };
 		044730191CD84BB100673F92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044730181CD84BB100673F92 /* AppDelegate.m */; };
-		0447301F1CD84BB100673F92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0447301D1CD84BB100673F92 /* Main.storyboard */; };
 		044730211CD84BB100673F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044730201CD84BB100673F92 /* Assets.xcassets */; };
 		044730241CD84BB100673F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044730221CD84BB100673F92 /* LaunchScreen.storyboard */; };
 		0461426B1CD8C720005F0419 /* XCFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461426A1CD8C720005F0419 /* XCFHomeViewController.m */; };
@@ -20,6 +19,7 @@
 		046142791CD8CA8C005F0419 /* XCFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046142781CD8CA8C005F0419 /* XCFSettingViewController.m */; };
 		0461427C1CD8CAA0005F0419 /* XCFProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461427B1CD8CAA0005F0419 /* XCFProfileViewController.m */; };
 		0461427F1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461427E1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.m */; };
+		046238351CDCAC3E00D5B6C5 /* XCFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046238341CDCAC3E00D5B6C5 /* XCFNavigationController.m */; };
 		04EEDC3A1CD880AA00AA64EF /* XCFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEDC391CD880AA00AA64EF /* XCFMainViewController.m */; };
 		6B401B9A1CD8E63400BD162A /* UIImage+OriginalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B401B991CD8E63400BD162A /* UIImage+OriginalImage.m */; };
 		6E4959DFDB6FC364539775A1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7D087F8A70688F75A6C7C /* libPods.a */; };
@@ -31,7 +31,6 @@
 		044730151CD84BB100673F92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		044730171CD84BB100673F92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		044730181CD84BB100673F92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0447301E1CD84BB100673F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		044730201CD84BB100673F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044730231CD84BB100673F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044730251CD84BB100673F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,8 @@
 		0461427B1CD8CAA0005F0419 /* XCFProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFProfileViewController.m; sourceTree = "<group>"; };
 		0461427D1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CustomItem.h"; sourceTree = "<group>"; };
 		0461427E1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CustomItem.m"; sourceTree = "<group>"; };
+		046238331CDCAC3E00D5B6C5 /* XCFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFNavigationController.h; sourceTree = "<group>"; };
+		046238341CDCAC3E00D5B6C5 /* XCFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFNavigationController.m; sourceTree = "<group>"; };
 		04EEDC381CD880AA00AA64EF /* XCFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFMainViewController.h; sourceTree = "<group>"; };
 		04EEDC391CD880AA00AA64EF /* XCFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFMainViewController.m; sourceTree = "<group>"; };
 		6B401B981CD8E63400BD162A /* UIImage+OriginalImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OriginalImage.h"; sourceTree = "<group>"; };
@@ -95,7 +96,6 @@
 				04EEDC221CD8792100AA64EF /* Classes */,
 				044730171CD84BB100673F92 /* AppDelegate.h */,
 				044730181CD84BB100673F92 /* AppDelegate.m */,
-				0447301D1CD84BB100673F92 /* Main.storyboard */,
 				044730201CD84BB100673F92 /* Assets.xcassets */,
 				044730221CD84BB100673F92 /* LaunchScreen.storyboard */,
 				044730251CD84BB100673F92 /* Info.plist */,
@@ -183,6 +183,8 @@
 			children = (
 				04EEDC381CD880AA00AA64EF /* XCFMainViewController.h */,
 				04EEDC391CD880AA00AA64EF /* XCFMainViewController.m */,
+				046238331CDCAC3E00D5B6C5 /* XCFNavigationController.h */,
+				046238341CDCAC3E00D5B6C5 /* XCFNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -397,7 +399,6 @@
 				046142761CD8C9FB005F0419 /* XCFLoginViewController.xib in Resources */,
 				044730241CD84BB100673F92 /* LaunchScreen.storyboard in Resources */,
 				044730211CD84BB100673F92 /* Assets.xcassets in Resources */,
-				0447301F1CD84BB100673F92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0461426E1CD8C93F005F0419 /* XCFMarketViewController.m in Sources */,
+				046238351CDCAC3E00D5B6C5 /* XCFNavigationController.m in Sources */,
 				044730191CD84BB100673F92 /* AppDelegate.m in Sources */,
 				0461427F1CD97C6B005F0419 /* UIBarButtonItem+CustomItem.m in Sources */,
 				046142711CD8C995005F0419 /* XCFCommunityViewController.m in Sources */,
@@ -473,14 +475,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0447301D1CD84BB100673F92 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0447301E1CD84BB100673F92 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		044730221CD84BB100673F92 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

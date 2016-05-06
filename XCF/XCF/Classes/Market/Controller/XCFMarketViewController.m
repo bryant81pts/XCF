@@ -33,8 +33,9 @@
     
     UISearchBar *searchBar = [[UISearchBar alloc] init];
     searchBar.placeholder = @"搜索商品";
-    searchBar.barTintColor = [UIColor redColor];
     self.navigationItem.titleView = searchBar;
+    UITextField *searchFieldTextField = [searchBar valueForKey:@"_searchField"];
+    searchFieldTextField.backgroundColor = ColorWithRGB(236, 236, 236);
     
 }
 

@@ -27,13 +27,14 @@
 - (void)setupNavigationBar{
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"homepageCreateRecipeButton_22x22_"] taget:self action:@selector(createRecipeButtonClick)];
-    
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"buylistButtonImage_22x22_"] taget:self action:@selector(buyListButtonClick)];
     
     UISearchBar *searchBar = [[UISearchBar alloc] init];
     searchBar.placeholder = @"菜谱、食材";
-    searchBar.barTintColor = [UIColor redColor];
     self.navigationItem.titleView = searchBar;
+    UITextField *searchFieldTextField = [searchBar valueForKey:@"_searchField"];
+    searchFieldTextField.backgroundColor = ColorWithRGB(236, 236, 236);
+
     
 }
 
