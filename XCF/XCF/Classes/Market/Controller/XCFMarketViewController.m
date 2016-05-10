@@ -7,8 +7,11 @@
 //
 
 #import "XCFMarketViewController.h"
-#import "XCFCustomSearchBar.h"
+
 #import "XCFSearchController.h"
+
+#import "XCFSearchBar.h"
+
 
 @interface XCFMarketViewController ()
 
@@ -19,8 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = RandomColor;
-    
-    
+
     //设置导航栏
     [self setupNavigationBar];
     
@@ -29,18 +31,16 @@
 #pragma mark - 设置导航栏
 - (void)setupNavigationBar{
     
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"leftPageButtonBackgroundNormal_22x22_"] taget:self action:@selector(marketCategoryButtonClick)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"leftPageButtonBackgroundNormal_22x22_"]
+                                                                           taget:self
+                                                                          action:@selector(marketCategoryButtonClick)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"shoppingCart_22x22_"]
+                                                                            taget:self
+                                                                           action:@selector(shoppingCartButtonClick)];
     
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"shoppingCart_22x22_"] taget:self action:@selector(shoppingCartButtonClick)];
-    
-    
-    XCFCustomSearchBar *searchBar = [XCFCustomSearchBar customSearchBarWithPlaceHolder:@"搜索商品"];
-    searchBar.searchBarDidBeginEditingBlock = ^{
-        
-        XCFSearchController *searchController = [[XCFSearchController alloc] init];
-        [self.navigationController pushViewController:searchController animated:YES];
-    };
-    
+
+    XCFSearchBar *searchBar = [XCFSearchBar searchBarWithPlaceholder:@"搜索商品"];
+
     self.navigationItem.titleView = searchBar;
     
 }

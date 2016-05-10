@@ -7,10 +7,13 @@
 //
 
 #import "XCFHomeViewController.h"
-#import "XCFCustomSearchBar.h"
+
+#import "XCFSearchBar.h"
+
 #import "XCFSearchController.h"
 
 @interface XCFHomeViewController ()
+
 
 @end
 
@@ -28,14 +31,19 @@
 #pragma mark - 设置导航栏
 - (void)setupNavigationBar{
     
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"homepageCreateRecipeButton_22x22_"] taget:self action:@selector(createRecipeButtonClick)];
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"buylistButtonImage_22x22_"] taget:self action:@selector(buyListButtonClick)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"homepageCreateRecipeButton_22x22_"]
+                                                                           taget:self
+                                                                          action:@selector(createRecipeButtonClick)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"buylistButtonImage_22x22_"]
+                                                                            taget:self
+                                                                           action:@selector(buyListButtonClick)];
     
-    XCFCustomSearchBar *searchBar = [XCFCustomSearchBar customSearchBarWithPlaceHolder:@"菜谱、食材"];
-    XCFSearchController *searchController = [[XCFSearchController alloc] init];
-    searchBar.searchBarDidBeginEditingBlock = ^{
-    
-        [self.navigationController pushViewController:searchController animated:YES];
+    XCFSearchBar *searchBar = [XCFSearchBar searchBarWithPlaceholder:@"菜谱、食材"];
+    __weak typeof(self)weakSelf = self;
+    searchBar.shouldBeginEditingBlock = ^{
+        
+        XCFSearchController *searchController = [[XCFSearchController alloc] init];
+        [weakSelf.navigationController pushViewController:searchController animated:YES];
     };
     
     self.navigationItem.titleView = searchBar;

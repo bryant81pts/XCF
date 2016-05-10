@@ -13,6 +13,8 @@
 #import "XCFProfileViewController.h"
 #import "XCFNavigationController.h"
 
+#import "UIImage+Extension.h"
+
 @interface XCFMainViewController ()
 
 @end
@@ -30,7 +32,7 @@
     [item setTitleTextAttributes:normalAttrDict forState:UIControlStateNormal];
     
     NSMutableDictionary *selectedAttrDict = [NSMutableDictionary dictionary];
-    selectedAttrDict[NSForegroundColorAttributeName] = ThemeColor;
+    selectedAttrDict[NSForegroundColorAttributeName] = ThemeRed;
     [item setTitleTextAttributes:selectedAttrDict forState:UIControlStateSelected];
     
 }

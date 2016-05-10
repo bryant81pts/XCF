@@ -24,6 +24,12 @@
 		046719161CE1F7EC00044F65 /* XCFCustomSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 046719131CE1F7EC00044F65 /* XCFCustomSearchBar.m */; };
 		0467191D1CE1F94100044F65 /* XCFSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467191C1CE1F94100044F65 /* XCFSearchController.m */; };
 		04EEDC3A1CD880AA00AA64EF /* XCFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEDC391CD880AA00AA64EF /* XCFMainViewController.m */; };
+
+		6B790A751CE221F400EAA45C /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B790A721CE221F400EAA45C /* UIBarButtonItem+Extension.m */; };
+		6B790A761CE221F400EAA45C /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B790A741CE221F400EAA45C /* UIImage+Extension.m */; };
+		6B790A7A1CE2222000EAA45C /* XCFSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B790A791CE2222000EAA45C /* XCFSearchBar.m */; };
+		6B790A7D1CE225C300EAA45C /* XCFSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B790A7C1CE225C300EAA45C /* XCFSearchController.m */; };
+
 		6E4959DFDB6FC364539775A1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7D087F8A70688F75A6C7C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +68,16 @@
 		0467191C1CE1F94100044F65 /* XCFSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFSearchController.m; sourceTree = "<group>"; };
 		04EEDC381CD880AA00AA64EF /* XCFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFMainViewController.h; sourceTree = "<group>"; };
 		04EEDC391CD880AA00AA64EF /* XCFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFMainViewController.m; sourceTree = "<group>"; };
+
+		6B790A711CE221F400EAA45C /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		6B790A721CE221F400EAA45C /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		6B790A731CE221F400EAA45C /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		6B790A741CE221F400EAA45C /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		6B790A781CE2222000EAA45C /* XCFSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFSearchBar.h; sourceTree = "<group>"; };
+		6B790A791CE2222000EAA45C /* XCFSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFSearchBar.m; sourceTree = "<group>"; };
+		6B790A7B1CE225C300EAA45C /* XCFSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFSearchController.h; sourceTree = "<group>"; };
+		6B790A7C1CE225C300EAA45C /* XCFSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFSearchController.m; sourceTree = "<group>"; };
+
 		780FE1FEE880992158D50094 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A7B7D087F8A70688F75A6C7C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -185,6 +201,8 @@
 			children = (
 				046142691CD8C720005F0419 /* XCFHomeViewController.h */,
 				0461426A1CD8C720005F0419 /* XCFHomeViewController.m */,
+				6B790A7B1CE225C300EAA45C /* XCFSearchController.h */,
+				6B790A7C1CE225C300EAA45C /* XCFSearchController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -274,9 +292,10 @@
 		04EEDC301CD8792100AA64EF /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				046719171CE1F8FF00044F65 /* PublicController */,
-				0467190C1CE1F7EC00044F65 /* Category */,
-				046719111CE1F7EC00044F65 /* PublicView */,
+
+				6B790A771CE2220400EAA45C /* PublicView */,
+				6B790A701CE221F400EAA45C /* Category */,
+
 				046142681CD8C459005F0419 /* XCF.pch */,
 			);
 			path = Other;
@@ -360,6 +379,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+
+		6B790A701CE221F400EAA45C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6B790A711CE221F400EAA45C /* UIBarButtonItem+Extension.h */,
+				6B790A721CE221F400EAA45C /* UIBarButtonItem+Extension.m */,
+				6B790A731CE221F400EAA45C /* UIImage+Extension.h */,
+				6B790A741CE221F400EAA45C /* UIImage+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6B790A771CE2220400EAA45C /* PublicView */ = {
+			isa = PBXGroup;
+			children = (
+				6B790A781CE2222000EAA45C /* XCFSearchBar.h */,
+				6B790A791CE2222000EAA45C /* XCFSearchBar.m */,
+			);
+			path = PublicView;
+			sourceTree = "<group>";
+		};
+
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -486,10 +527,15 @@
 				0461426E1CD8C93F005F0419 /* XCFMarketViewController.m in Sources */,
 				046238351CDCAC3E00D5B6C5 /* XCFNavigationController.m in Sources */,
 				044730191CD84BB100673F92 /* AppDelegate.m in Sources */,
-				0467191D1CE1F94100044F65 /* XCFSearchController.m in Sources */,
-				0467190B1CE1F7DB00044F65 /* XCFCommunityViewController.m in Sources */,
+
+				6B790A7D1CE225C300EAA45C /* XCFSearchController.m in Sources */,
+				6B790A761CE221F400EAA45C /* UIImage+Extension.m in Sources */,
+				6B790A7A1CE2222000EAA45C /* XCFSearchBar.m in Sources */,
+				046142711CD8C995005F0419 /* XCFCommunityViewController.m in Sources */,
+
 				046142791CD8CA8C005F0419 /* XCFSettingViewController.m in Sources */,
 				046142751CD8C9FB005F0419 /* XCFLoginViewController.m in Sources */,
+				6B790A751CE221F400EAA45C /* UIBarButtonItem+Extension.m in Sources */,
 				044730161CD84BB100673F92 /* main.m in Sources */,
 				04EEDC3A1CD880AA00AA64EF /* XCFMainViewController.m in Sources */,
 				0461426B1CD8C720005F0419 /* XCFHomeViewController.m in Sources */,
