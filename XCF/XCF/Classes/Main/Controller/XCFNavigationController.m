@@ -22,7 +22,6 @@
     
     self.navigationBar.barTintColor = [UIColor whiteColor];
     
-    //移除NavigtionBar的bottomline
     for (UIImageView *imageView in self.navigationBar.subviews) {
     
         if ([imageView isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {
@@ -35,6 +34,25 @@
         }
     }
     
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
+
+    if (self.childViewControllers.count != 0) {
+        
+        viewController.hidesBottomBarWhenPushed = YES;
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"backStretchBackgroundNormal_22x22_"] taget:self action:@selector(backButtonClick)];
+    }
+    
+    [super pushViewController:viewController animated:animated];
+    
+    
+}
+
+- (void)backButtonClick{
+    
+    [self popViewControllerAnimated:YES];
 }
 
 

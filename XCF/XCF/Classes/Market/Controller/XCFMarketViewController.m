@@ -7,6 +7,8 @@
 //
 
 #import "XCFMarketViewController.h"
+#import "XCFCustomSearchBar.h"
+#import "XCFSearchController.h"
 
 @interface XCFMarketViewController ()
 
@@ -31,11 +33,15 @@
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem customItemWithImage:[UIImage imageNamed:@"shoppingCart_22x22_"] taget:self action:@selector(shoppingCartButtonClick)];
     
-    UISearchBar *searchBar = [[UISearchBar alloc] init];
-    searchBar.placeholder = @"搜索商品";
+    
+    XCFCustomSearchBar *searchBar = [XCFCustomSearchBar customSearchBarWithPlaceHolder:@"搜索商品"];
+    searchBar.searchBarDidBeginEditingBlock = ^{
+        
+        XCFSearchController *searchController = [[XCFSearchController alloc] init];
+        [self.navigationController pushViewController:searchController animated:YES];
+    };
+    
     self.navigationItem.titleView = searchBar;
-    UITextField *searchFieldTextField = [searchBar valueForKey:@"_searchField"];
-    searchFieldTextField.backgroundColor = ColorWithRGB(236, 236, 236);
     
 }
 
