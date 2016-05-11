@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04212FD01CE2C99100D64840 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FCF1CE2C99100D64840 /* UIView+Extension.m */; };
+		04212FD31CE2F51000D64840 /* XCFHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FD21CE2F51000D64840 /* XCFHomeHeaderView.m */; };
+		04212FD51CE2F55400D64840 /* XCFHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04212FD41CE2F55400D64840 /* XCFHomeHeaderView.xib */; };
+		04212FD81CE305AB00D64840 /* XCFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FD71CE305AB00D64840 /* XCFConst.m */; };
+		04212FDB1CE31AC600D64840 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FDA1CE31AC600D64840 /* UIButton+Extension.m */; };
+		04212FDE1CE32AFE00D64840 /* XCFHeaderViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FDD1CE32AFE00D64840 /* XCFHeaderViewButton.m */; };
 		044730161CD84BB100673F92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044730151CD84BB100673F92 /* main.m */; };
 		044730191CD84BB100673F92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044730181CD84BB100673F92 /* AppDelegate.m */; };
 		044730211CD84BB100673F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044730201CD84BB100673F92 /* Assets.xcassets */; };
@@ -29,6 +35,17 @@
 
 /* Begin PBXFileReference section */
 		037D2CD43429E9F9740EE860 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		04212FCE1CE2C99100D64840 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		04212FCF1CE2C99100D64840 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		04212FD11CE2F51000D64840 /* XCFHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFHomeHeaderView.h; sourceTree = "<group>"; };
+		04212FD21CE2F51000D64840 /* XCFHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFHomeHeaderView.m; sourceTree = "<group>"; };
+		04212FD41CE2F55400D64840 /* XCFHomeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFHomeHeaderView.xib; sourceTree = "<group>"; };
+		04212FD61CE305AB00D64840 /* XCFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFConst.h; sourceTree = "<group>"; };
+		04212FD71CE305AB00D64840 /* XCFConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFConst.m; sourceTree = "<group>"; };
+		04212FD91CE31AC600D64840 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		04212FDA1CE31AC600D64840 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		04212FDC1CE32AFE00D64840 /* XCFHeaderViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFHeaderViewButton.h; sourceTree = "<group>"; };
+		04212FDD1CE32AFE00D64840 /* XCFHeaderViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFHeaderViewButton.m; sourceTree = "<group>"; };
 		044730111CD84BB100673F92 /* XCF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044730151CD84BB100673F92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		044730171CD84BB100673F92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,6 +189,11 @@
 		04EEDC271CD8792100AA64EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04212FD11CE2F51000D64840 /* XCFHomeHeaderView.h */,
+				04212FD21CE2F51000D64840 /* XCFHomeHeaderView.m */,
+				04212FD41CE2F55400D64840 /* XCFHomeHeaderView.xib */,
+				04212FDC1CE32AFE00D64840 /* XCFHeaderViewButton.h */,
+				04212FDD1CE32AFE00D64840 /* XCFHeaderViewButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +272,8 @@
 				6B790A771CE2220400EAA45C /* PublicView */,
 				6B790A701CE221F400EAA45C /* Category */,
 				046142681CD8C459005F0419 /* XCF.pch */,
+				04212FD61CE305AB00D64840 /* XCFConst.h */,
+				04212FD71CE305AB00D64840 /* XCFConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -339,6 +363,10 @@
 				6B790A721CE221F400EAA45C /* UIBarButtonItem+Extension.m */,
 				6B790A731CE221F400EAA45C /* UIImage+Extension.h */,
 				6B790A741CE221F400EAA45C /* UIImage+Extension.m */,
+				04212FCE1CE2C99100D64840 /* UIView+Extension.h */,
+				04212FCF1CE2C99100D64840 /* UIView+Extension.m */,
+				04212FD91CE31AC600D64840 /* UIButton+Extension.h */,
+				04212FDA1CE31AC600D64840 /* UIButton+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -414,6 +442,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04212FD51CE2F55400D64840 /* XCFHomeHeaderView.xib in Resources */,
 				046142761CD8C9FB005F0419 /* XCFLoginViewController.xib in Resources */,
 				044730241CD84BB100673F92 /* LaunchScreen.storyboard in Resources */,
 				044730211CD84BB100673F92 /* Assets.xcassets in Resources */,
@@ -475,17 +504,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04212FDE1CE32AFE00D64840 /* XCFHeaderViewButton.m in Sources */,
+				04212FD01CE2C99100D64840 /* UIView+Extension.m in Sources */,
 				6B790A7E1CE2490400EAA45C /* XCFCommunityViewController.m in Sources */,
 				0461426E1CD8C93F005F0419 /* XCFMarketViewController.m in Sources */,
+				04212FD81CE305AB00D64840 /* XCFConst.m in Sources */,
 				046238351CDCAC3E00D5B6C5 /* XCFNavigationController.m in Sources */,
 				044730191CD84BB100673F92 /* AppDelegate.m in Sources */,
 				6B790A7D1CE225C300EAA45C /* XCFSearchController.m in Sources */,
+				04212FDB1CE31AC600D64840 /* UIButton+Extension.m in Sources */,
 				6B790A761CE221F400EAA45C /* UIImage+Extension.m in Sources */,
 				6B790A7A1CE2222000EAA45C /* XCFSearchBar.m in Sources */,
 				046142791CD8CA8C005F0419 /* XCFSettingViewController.m in Sources */,
 				046142751CD8C9FB005F0419 /* XCFLoginViewController.m in Sources */,
 				6B790A751CE221F400EAA45C /* UIBarButtonItem+Extension.m in Sources */,
 				044730161CD84BB100673F92 /* main.m in Sources */,
+				04212FD31CE2F51000D64840 /* XCFHomeHeaderView.m in Sources */,
 				04EEDC3A1CD880AA00AA64EF /* XCFMainViewController.m in Sources */,
 				0461426B1CD8C720005F0419 /* XCFHomeViewController.m in Sources */,
 				0461427C1CD8CAA0005F0419 /* XCFProfileViewController.m in Sources */,

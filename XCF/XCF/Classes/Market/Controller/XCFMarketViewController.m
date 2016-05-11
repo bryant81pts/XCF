@@ -7,9 +7,7 @@
 //
 
 #import "XCFMarketViewController.h"
-
 #import "XCFSearchController.h"
-
 #import "XCFSearchBar.h"
 
 

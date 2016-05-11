@@ -27,6 +27,17 @@
     
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    /** 延迟弹出键盘*/
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [self.searchBar becomeFirstResponder];
+    });
+    
+}
+
 - (void)setupNavBar{
     
     self.navigationItem.leftBarButtonItem = nil;
@@ -37,11 +48,7 @@
                                                                            action:@selector(cancelButtonClick)];
     XCFSearchBar *searchBar = [XCFSearchBar searchBarWithPlaceholder:@"菜谱、食材"];
     self.navigationItem.titleView = searchBar;
-    [searchBar becomeFirstResponder];
     self.searchBar = searchBar;
-    
-    
-    
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{

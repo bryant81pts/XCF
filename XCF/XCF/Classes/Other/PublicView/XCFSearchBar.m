@@ -23,21 +23,10 @@
     [searchBar setImage:[UIImage imageNamed:@"searchIcon_22x22_"] forSearchBarIcon:UISearchBarIconSearch state:UIControlStateNormal];
     UITextField *searchFieldTextField = [searchBar valueForKey:@"_searchField"];
     searchFieldTextField.tintColor = [UIColor lightGrayColor];
-    searchFieldTextField.backgroundColor = ColorWithRGB(236, 236, 236);
+    searchFieldTextField.backgroundColor = ColorWithRGB(245, 242, 242);
     UIImageView *searchBarBackground = [searchBar valueForKey:@"_background"];
     [searchBarBackground removeFromSuperview];
     return searchBar;
 }
-
-
-#pragma mark - UISearchBarDelegate
-
-- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
-    
-    !self.shouldBeginEditingBlock? : self.shouldBeginEditingBlock();
-    return YES;
-}
-
-
 
 @end

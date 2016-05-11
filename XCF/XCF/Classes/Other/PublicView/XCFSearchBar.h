@@ -12,6 +12,4 @@
 
 + (instancetype)searchBarWithPlaceholder:(NSString *)placeholder;
 
-@property(nonatomic,copy) void (^shouldBeginEditingBlock)();
-
 @end

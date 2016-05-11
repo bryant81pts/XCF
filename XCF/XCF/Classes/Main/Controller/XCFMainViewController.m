@@ -13,8 +13,6 @@
 #import "XCFProfileViewController.h"
 #import "XCFNavigationController.h"
 
-#import "UIImage+Extension.h"
-
 @interface XCFMainViewController ()
 
 @end
