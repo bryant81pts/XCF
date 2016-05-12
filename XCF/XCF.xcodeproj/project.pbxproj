@@ -12,7 +12,7 @@
 		04212FD51CE2F55400D64840 /* XCFHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04212FD41CE2F55400D64840 /* XCFHomeHeaderView.xib */; };
 		04212FD81CE305AB00D64840 /* XCFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FD71CE305AB00D64840 /* XCFConst.m */; };
 		04212FDB1CE31AC600D64840 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FDA1CE31AC600D64840 /* UIButton+Extension.m */; };
-		04212FDE1CE32AFE00D64840 /* XCFHeaderViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FDD1CE32AFE00D64840 /* XCFHeaderViewButton.m */; };
+		04212FDE1CE32AFE00D64840 /* XCFNavButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FDD1CE32AFE00D64840 /* XCFNavButton.m */; };
 		044730161CD84BB100673F92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044730151CD84BB100673F92 /* main.m */; };
 		044730191CD84BB100673F92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044730181CD84BB100673F92 /* AppDelegate.m */; };
 		044730211CD84BB100673F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044730201CD84BB100673F92 /* Assets.xcassets */; };
@@ -30,6 +30,8 @@
 		6B790A7A1CE2222000EAA45C /* XCFSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B790A791CE2222000EAA45C /* XCFSearchBar.m */; };
 		6B790A7D1CE225C300EAA45C /* XCFSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B790A7C1CE225C300EAA45C /* XCFSearchController.m */; };
 		6B790A7E1CE2490400EAA45C /* XCFCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467190A1CE1F7DB00044F65 /* XCFCommunityViewController.m */; };
+		6B7E84161CE4D140006D7903 /* XCFNavButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7E84151CE4D140006D7903 /* XCFNavButtonItem.m */; };
+		6B7E84191CE4E5BC006D7903 /* XCFURLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7E84181CE4E5BC006D7903 /* XCFURLConst.m */; };
 		6E4959DFDB6FC364539775A1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7D087F8A70688F75A6C7C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +46,8 @@
 		04212FD71CE305AB00D64840 /* XCFConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFConst.m; sourceTree = "<group>"; };
 		04212FD91CE31AC600D64840 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		04212FDA1CE31AC600D64840 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
-		04212FDC1CE32AFE00D64840 /* XCFHeaderViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFHeaderViewButton.h; sourceTree = "<group>"; };
-		04212FDD1CE32AFE00D64840 /* XCFHeaderViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFHeaderViewButton.m; sourceTree = "<group>"; };
+		04212FDC1CE32AFE00D64840 /* XCFNavButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFNavButton.h; sourceTree = "<group>"; };
+		04212FDD1CE32AFE00D64840 /* XCFNavButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFNavButton.m; sourceTree = "<group>"; };
 		044730111CD84BB100673F92 /* XCF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044730151CD84BB100673F92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		044730171CD84BB100673F92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +81,10 @@
 		6B790A791CE2222000EAA45C /* XCFSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFSearchBar.m; sourceTree = "<group>"; };
 		6B790A7B1CE225C300EAA45C /* XCFSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFSearchController.h; sourceTree = "<group>"; };
 		6B790A7C1CE225C300EAA45C /* XCFSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFSearchController.m; sourceTree = "<group>"; };
+		6B7E84141CE4D140006D7903 /* XCFNavButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCFNavButtonItem.h; path = XCF/Classes/Home/Controller/XCFNavButtonItem.h; sourceTree = SOURCE_ROOT; };
+		6B7E84151CE4D140006D7903 /* XCFNavButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCFNavButtonItem.m; path = XCF/Classes/Home/Controller/XCFNavButtonItem.m; sourceTree = SOURCE_ROOT; };
+		6B7E84171CE4E5BC006D7903 /* XCFURLConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFURLConst.h; sourceTree = "<group>"; };
+		6B7E84181CE4E5BC006D7903 /* XCFURLConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFURLConst.m; sourceTree = "<group>"; };
 		780FE1FEE880992158D50094 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A7B7D087F8A70688F75A6C7C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -182,6 +188,8 @@
 		04EEDC261CD8792100AA64EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6B7E84141CE4D140006D7903 /* XCFNavButtonItem.h */,
+				6B7E84151CE4D140006D7903 /* XCFNavButtonItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,8 +200,8 @@
 				04212FD11CE2F51000D64840 /* XCFHomeHeaderView.h */,
 				04212FD21CE2F51000D64840 /* XCFHomeHeaderView.m */,
 				04212FD41CE2F55400D64840 /* XCFHomeHeaderView.xib */,
-				04212FDC1CE32AFE00D64840 /* XCFHeaderViewButton.h */,
-				04212FDD1CE32AFE00D64840 /* XCFHeaderViewButton.m */,
+				04212FDC1CE32AFE00D64840 /* XCFNavButton.h */,
+				04212FDD1CE32AFE00D64840 /* XCFNavButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +282,8 @@
 				046142681CD8C459005F0419 /* XCF.pch */,
 				04212FD61CE305AB00D64840 /* XCFConst.h */,
 				04212FD71CE305AB00D64840 /* XCFConst.m */,
+				6B7E84171CE4E5BC006D7903 /* XCFURLConst.h */,
+				6B7E84181CE4E5BC006D7903 /* XCFURLConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -504,12 +514,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04212FDE1CE32AFE00D64840 /* XCFHeaderViewButton.m in Sources */,
+				04212FDE1CE32AFE00D64840 /* XCFNavButton.m in Sources */,
 				04212FD01CE2C99100D64840 /* UIView+Extension.m in Sources */,
 				6B790A7E1CE2490400EAA45C /* XCFCommunityViewController.m in Sources */,
 				0461426E1CD8C93F005F0419 /* XCFMarketViewController.m in Sources */,
 				04212FD81CE305AB00D64840 /* XCFConst.m in Sources */,
 				046238351CDCAC3E00D5B6C5 /* XCFNavigationController.m in Sources */,
+				6B7E84161CE4D140006D7903 /* XCFNavButtonItem.m in Sources */,
 				044730191CD84BB100673F92 /* AppDelegate.m in Sources */,
 				6B790A7D1CE225C300EAA45C /* XCFSearchController.m in Sources */,
 				04212FDB1CE31AC600D64840 /* UIButton+Extension.m in Sources */,
@@ -520,6 +531,7 @@
 				6B790A751CE221F400EAA45C /* UIBarButtonItem+Extension.m in Sources */,
 				044730161CD84BB100673F92 /* main.m in Sources */,
 				04212FD31CE2F51000D64840 /* XCFHomeHeaderView.m in Sources */,
+				6B7E84191CE4E5BC006D7903 /* XCFURLConst.m in Sources */,
 				04EEDC3A1CD880AA00AA64EF /* XCFMainViewController.m in Sources */,
 				0461426B1CD8C720005F0419 /* XCFHomeViewController.m in Sources */,
 				0461427C1CD8CAA0005F0419 /* XCFProfileViewController.m in Sources */,

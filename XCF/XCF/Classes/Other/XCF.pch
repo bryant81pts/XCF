@@ -21,6 +21,7 @@
 
 //头文件
 #import "XCFConst.h"
+#import "XCFURLConst.h"
 #import "UIBarButtonItem+Extension.h"
 #import "UIImage+Extension.h"
 #import "UIView+Extension.h"

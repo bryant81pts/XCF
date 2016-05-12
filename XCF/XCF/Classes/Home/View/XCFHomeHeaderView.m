@@ -7,7 +7,7 @@
 //
 
 #import "XCFHomeHeaderView.h"
-#import "XCFHeaderViewButton.h"
+#import "XCFNavButton.h"
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>
 
@@ -56,7 +56,7 @@
     self.buttonWidth = buttonWidth;
     for (int i = 0; i < buttonCount; i++) {
         
-        XCFHeaderViewButton *button = [[XCFHeaderViewButton alloc] init];
+        XCFNavButton *button = [[XCFNavButton alloc] init];
         [button addTarget:self action:@selector(headerViewButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         [button setImage:[UIImage imageNamed:@"convenient_share_wx_22x22_"] forState:UIControlStateNormal];
         [button setTitle:@"Fuck" forState:UIControlStateNormal];
@@ -92,7 +92,7 @@
     
 }
 
-- (void)headerViewButtonClick:(XCFHeaderViewButton *)button {
+- (void)headerViewButtonClick:(XCFNavButton *)button {
     
     XCFFunc;
     

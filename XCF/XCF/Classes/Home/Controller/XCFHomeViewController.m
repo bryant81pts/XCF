@@ -11,6 +11,7 @@
 #import "XCFSearchController.h"
 #import "XCFHomeHeaderView.h"
 #import <AFNetworking/AFNetworking.h>
+#import <MJExtension/MJExtension.h>
 
 @interface XCFHomeViewController ()
 
@@ -27,7 +28,7 @@
     [self setupTableHeaderView];
     
     
-    [self loadNewData];
+    [self loadHeaderViewData];
     
 
 }
@@ -75,7 +76,14 @@
     self.tableView.tableHeaderView = headerView;
 }
 
-- (void) loadNewData{
+- (void) loadHeaderViewData{
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:XCFHeaderViewRequestURL parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
     
     
 }

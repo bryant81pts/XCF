@@ -1,16 +1,16 @@
 //
-//  XCFHeaderViewButton.m
+// XCFNavButton.m
 //  XCF
 //
 //  Created by  Mac on 16/5/11.
 //  Copyright © 2016年 dalpha. All rights reserved.
 //
 
-#import "XCFHeaderViewButton.h"
+#import "XCFNavButton.h"
 #import <UIImageView+WebCache.h>
 
 
-@implementation XCFHeaderViewButton
+@implementation XCFNavButton
 
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];

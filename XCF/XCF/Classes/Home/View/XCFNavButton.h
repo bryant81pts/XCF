@@ -1,5 +1,5 @@
 //
-//  XCFHeaderViewButton.h
+//  XCFNavButton.h
 //  XCF
 //
 //  Created by  Mac on 16/5/11.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XCFHeaderViewButton : UIButton
+@interface XCFNavButton : UIButton
 
 
 @end
