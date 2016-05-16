@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class XCFContentItem;
 @interface XCFHomeHeaderView : UIView
 
 + (instancetype) homeHeaderView;
 
+@property (nonatomic, strong)XCFContentItem *item;
 @end

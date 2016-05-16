@@ -10,10 +10,13 @@
 #import "XCFSearchBar.h"
 #import "XCFSearchController.h"
 #import "XCFHomeHeaderView.h"
+#import "XCFContentItem.h"
 #import <AFNetworking/AFNetworking.h>
 #import <MJExtension/MJExtension.h>
 
+
 @interface XCFHomeViewController ()
+
 
 @end
 
@@ -26,8 +29,6 @@
     
     [self setupNavigationBar];
     [self setupTableHeaderView];
-    
-    
     [self loadHeaderViewData];
     
 
@@ -76,10 +77,16 @@
     self.tableView.tableHeaderView = headerView;
 }
 
+/** 请求headerView数据*/
 - (void) loadHeaderViewData{
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:XCFHeaderViewRequestURL parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        XCFContentItem *item = [XCFContentItem mj_objectWithKeyValues:responseObject[@"content"]];
+        XCFHomeHeaderView *headerView = (XCFHomeHeaderView *)self.tableView.tableHeaderView;
+        headerView.item = item;
+        //[self.tableView reloadData];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         

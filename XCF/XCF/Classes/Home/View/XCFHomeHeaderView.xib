@@ -22,8 +22,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="187" height="130"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看好友并关注" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3r-5d-KZF">
-                                    <rect key="frame" x="44" y="101" width="98" height="17"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <rect key="frame" x="41" y="100" width="105" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -38,46 +38,60 @@
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="hoW-86-ptT" secondAttribute="bottom" id="55g-wo-opw"/>
                                 <constraint firstItem="GVR-XC-cG2" firstAttribute="centerY" secondItem="hoW-86-ptT" secondAttribute="centerY" id="8Lc-kJ-rL5"/>
+                                <constraint firstAttribute="bottom" secondItem="S3r-5d-KZF" secondAttribute="bottom" constant="12" id="DzN-0m-17p"/>
                                 <constraint firstAttribute="trailing" secondItem="hoW-86-ptT" secondAttribute="trailing" id="LTT-V1-Bxf"/>
                                 <constraint firstItem="S3r-5d-KZF" firstAttribute="top" secondItem="hoW-86-ptT" secondAttribute="bottom" constant="-29" id="Ox0-7e-QWw"/>
+                                <constraint firstAttribute="bottom" secondItem="S3r-5d-KZF" secondAttribute="bottom" constant="12" id="YAk-9R-HA4"/>
+                                <constraint firstItem="S3r-5d-KZF" firstAttribute="centerX" secondItem="Iwb-kY-ukJ" secondAttribute="centerX" id="evj-vJ-6Z4"/>
                                 <constraint firstItem="hoW-86-ptT" firstAttribute="leading" secondItem="Iwb-kY-ukJ" secondAttribute="leading" id="g0Y-EY-d9e"/>
                                 <constraint firstItem="GVR-XC-cG2" firstAttribute="centerX" secondItem="hoW-86-ptT" secondAttribute="centerX" id="hO7-0g-qGJ"/>
                                 <constraint firstItem="S3r-5d-KZF" firstAttribute="centerX" secondItem="hoW-86-ptT" secondAttribute="centerX" id="keo-rx-MRu"/>
                                 <constraint firstItem="hoW-86-ptT" firstAttribute="top" secondItem="Iwb-kY-ukJ" secondAttribute="top" id="qQe-t2-aaG"/>
                             </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Ox0-7e-QWw"/>
+                                    <exclude reference="YAk-9R-HA4"/>
+                                    <exclude reference="keo-rx-MRu"/>
+                                </mask>
+                            </variation>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eX5-pz-cow" userLabel="PopularRecipeView">
                             <rect key="frame" x="0.0" y="0.0" width="188" height="130"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本周流行菜谱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koB-1g-07F">
-                                    <rect key="frame" x="52" y="94" width="84" height="24"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j3M-aH-Udq">
                                     <rect key="frame" x="0.0" y="0.0" width="188" height="130"/>
                                 </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本周流行菜谱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koB-1g-07F">
+                                    <rect key="frame" x="49" y="100" width="90" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="j3M-aH-Udq" secondAttribute="bottom" id="9tI-eH-j06"/>
                                 <constraint firstItem="j3M-aH-Udq" firstAttribute="top" secondItem="eX5-pz-cow" secondAttribute="top" id="MvP-A4-DgB"/>
                                 <constraint firstItem="koB-1g-07F" firstAttribute="centerX" secondItem="j3M-aH-Udq" secondAttribute="centerX" id="Ovu-Zu-scZ"/>
                                 <constraint firstItem="koB-1g-07F" firstAttribute="centerY" secondItem="j3M-aH-Udq" secondAttribute="centerY" id="Oxt-yL-2zS"/>
+                                <constraint firstAttribute="bottom" secondItem="koB-1g-07F" secondAttribute="bottom" constant="12" id="QdE-q0-p0t"/>
                                 <constraint firstItem="koB-1g-07F" firstAttribute="centerY" secondItem="j3M-aH-Udq" secondAttribute="centerY" id="Qvq-nV-oOt"/>
                                 <constraint firstAttribute="trailing" secondItem="j3M-aH-Udq" secondAttribute="trailing" id="Y0W-tc-DY2"/>
                                 <constraint firstItem="j3M-aH-Udq" firstAttribute="leading" secondItem="eX5-pz-cow" secondAttribute="leading" id="ZNm-MD-EqU"/>
                                 <constraint firstItem="koB-1g-07F" firstAttribute="top" secondItem="j3M-aH-Udq" secondAttribute="bottom" constant="-36" id="qLc-wg-ccd"/>
+                                <constraint firstItem="koB-1g-07F" firstAttribute="centerX" secondItem="eX5-pz-cow" secondAttribute="centerX" id="xns-Xd-g9b"/>
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
+                                    <exclude reference="Ovu-Zu-scZ"/>
                                     <exclude reference="Oxt-yL-2zS"/>
                                     <exclude reference="Qvq-nV-oOt"/>
+                                    <exclude reference="qLc-wg-ccd"/>
                                 </mask>
                             </variation>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="eX5-pz-cow" secondAttribute="bottom" id="2rK-Kg-iYi"/>
                         <constraint firstAttribute="height" constant="130" id="63r-GU-JSk"/>
@@ -90,6 +104,11 @@
                         <constraint firstItem="eX5-pz-cow" firstAttribute="top" secondItem="ZrH-Hd-cxn" secondAttribute="top" id="pZq-6t-Yr8"/>
                         <constraint firstAttribute="bottom" secondItem="Iwb-kY-ukJ" secondAttribute="bottom" id="wcc-js-SCS"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="iaq-G4-UFl"/>
+                        </mask>
+                    </variation>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtd-11-Wp4" userLabel="MiddleView">
                     <rect key="frame" x="0.0" y="130" width="375" height="78"/>
@@ -128,7 +147,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.97254901960784312" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="kpj-Jz-1bF" firstAttribute="top" secondItem="wtd-11-Wp4" secondAttribute="bottom" id="3R0-LS-mst"/>
                 <constraint firstItem="wtd-11-Wp4" firstAttribute="top" secondItem="ZrH-Hd-cxn" secondAttribute="bottom" id="Nxi-U8-QRt"/>
@@ -147,7 +166,7 @@
             <connections>
                 <outlet property="bottomScrollView" destination="e6f-Ku-syD" id="7PU-TD-wVy"/>
                 <outlet property="middleScrollView" destination="sIm-QC-6EQ" id="Xdh-uh-7a9"/>
-                <outlet property="popularRecipeView" destination="eX5-pz-cow" id="7SB-Rl-b50"/>
+                <outlet property="popularRecipeImageView" destination="j3M-aH-Udq" id="dMO-Je-yVS"/>
             </connections>
             <point key="canvasLocation" x="259.5" y="164"/>
         </view>

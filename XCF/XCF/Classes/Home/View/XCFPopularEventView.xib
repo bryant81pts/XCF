@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XCFPopularEventView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="themeSmallPicForBreakfast_320x70_" translatesAutoresizingMaskIntoConstraints="NO" id="cZe-M7-HNe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="Io0-ks-zMT"/>
+                        <constraint firstAttribute="height" constant="70" id="n9n-4n-2TA"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Io0-ks-zMT"/>
+                            <exclude reference="n9n-4n-2TA"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 早餐 - " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx9-ba-K93">
+                    <rect key="frame" x="158" y="10" width="60" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4333作品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8og-uU-0dM">
+                    <rect key="frame" x="156" y="30" width="63" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3F6-uq-TpY">
+                    <rect key="frame" x="297" y="10" width="68" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3F6-uq-TpY" secondAttribute="height" multiplier="1:1" id="tPx-jK-RFf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Xx9-ba-K93" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="1mR-Rv-RNJ"/>
+                <constraint firstAttribute="bottom" secondItem="3F6-uq-TpY" secondAttribute="bottom" constant="10" id="2dy-60-uHu"/>
+                <constraint firstItem="Xx9-ba-K93" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5qc-19-AAp"/>
+                <constraint firstItem="cZe-M7-HNe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6v6-KR-SIQ"/>
+                <constraint firstItem="cZe-M7-HNe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="944-Xm-tig"/>
+                <constraint firstItem="cZe-M7-HNe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="C0h-XH-Pul"/>
+                <constraint firstAttribute="bottom" secondItem="cZe-M7-HNe" secondAttribute="bottom" id="DAT-Aw-SnT"/>
+                <constraint firstItem="8og-uU-0dM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Nwx-gw-DKc"/>
+                <constraint firstItem="3F6-uq-TpY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="XnE-XA-XKo"/>
+                <constraint firstAttribute="trailing" secondItem="cZe-M7-HNe" secondAttribute="trailing" id="c4n-xZ-7eL"/>
+                <constraint firstItem="cZe-M7-HNe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cvg-Xz-YzD"/>
+                <constraint firstItem="8og-uU-0dM" firstAttribute="top" secondItem="Xx9-ba-K93" secondAttribute="bottom" id="jND-bI-wmb"/>
+                <constraint firstAttribute="trailing" secondItem="3F6-uq-TpY" secondAttribute="trailing" constant="10" id="kiF-vs-BVZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="944-Xm-tig"/>
+                    <exclude reference="cvg-Xz-YzD"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backgroundImageView" destination="cZe-M7-HNe" id="FWj-R7-HNK"/>
+                <outlet property="recipeCountLabel" destination="8og-uU-0dM" id="YLG-sa-nN0"/>
+                <outlet property="recipeImageView" destination="3F6-uq-TpY" id="sgU-7z-cTG"/>
+                <outlet property="recipeTypeLabel" destination="Xx9-ba-K93" id="Chk-hZ-Q3i"/>
+            </connections>
+            <point key="canvasLocation" x="377.5" y="-138"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="themeSmallPicForBreakfast_320x70_" width="320" height="68"/>
+    </resources>
+</document>

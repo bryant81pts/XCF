@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0400654F1CE9915600716B9F /* XCFContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400654E1CE9915600716B9F /* XCFContentItem.m */; };
+		040065521CE9935000716B9F /* XCFPopularEventsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 040065511CE9935000716B9F /* XCFPopularEventsItem.m */; };
+		040065551CE993D100716B9F /* XCFEventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 040065541CE993D100716B9F /* XCFEventItem.m */; };
+		040065581CE997B700716B9F /* XCFDishesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 040065571CE997B700716B9F /* XCFDishesItem.m */; };
+		0400655B1CE9BF8600716B9F /* XCFPopularEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400655A1CE9BF8600716B9F /* XCFPopularEventView.m */; };
+		0400655D1CE9BF9900716B9F /* XCFPopularEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0400655C1CE9BF9900716B9F /* XCFPopularEventView.xib */; };
 		04212FD01CE2C99100D64840 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FCF1CE2C99100D64840 /* UIView+Extension.m */; };
 		04212FD31CE2F51000D64840 /* XCFHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FD21CE2F51000D64840 /* XCFHomeHeaderView.m */; };
 		04212FD51CE2F55400D64840 /* XCFHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04212FD41CE2F55400D64840 /* XCFHomeHeaderView.xib */; };
@@ -37,6 +43,17 @@
 
 /* Begin PBXFileReference section */
 		037D2CD43429E9F9740EE860 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0400654D1CE9915600716B9F /* XCFContentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFContentItem.h; sourceTree = "<group>"; };
+		0400654E1CE9915600716B9F /* XCFContentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFContentItem.m; sourceTree = "<group>"; };
+		040065501CE9935000716B9F /* XCFPopularEventsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFPopularEventsItem.h; sourceTree = "<group>"; };
+		040065511CE9935000716B9F /* XCFPopularEventsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFPopularEventsItem.m; sourceTree = "<group>"; };
+		040065531CE993D100716B9F /* XCFEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFEventItem.h; sourceTree = "<group>"; };
+		040065541CE993D100716B9F /* XCFEventItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFEventItem.m; sourceTree = "<group>"; };
+		040065561CE997B700716B9F /* XCFDishesItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFDishesItem.h; sourceTree = "<group>"; };
+		040065571CE997B700716B9F /* XCFDishesItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFDishesItem.m; sourceTree = "<group>"; };
+		040065591CE9BF8600716B9F /* XCFPopularEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFPopularEventView.h; sourceTree = "<group>"; };
+		0400655A1CE9BF8600716B9F /* XCFPopularEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFPopularEventView.m; sourceTree = "<group>"; };
+		0400655C1CE9BF9900716B9F /* XCFPopularEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFPopularEventView.xib; sourceTree = "<group>"; };
 		04212FCE1CE2C99100D64840 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		04212FCF1CE2C99100D64840 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		04212FD11CE2F51000D64840 /* XCFHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFHomeHeaderView.h; sourceTree = "<group>"; };
@@ -101,6 +118,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0400655E1CE9F0BF00716B9F /* HeaderModel */ = {
+			isa = PBXGroup;
+			children = (
+				0400654D1CE9915600716B9F /* XCFContentItem.h */,
+				0400654E1CE9915600716B9F /* XCFContentItem.m */,
+				6B7E84141CE4D140006D7903 /* XCFNavButtonItem.h */,
+				6B7E84151CE4D140006D7903 /* XCFNavButtonItem.m */,
+				040065501CE9935000716B9F /* XCFPopularEventsItem.h */,
+				040065511CE9935000716B9F /* XCFPopularEventsItem.m */,
+				040065531CE993D100716B9F /* XCFEventItem.h */,
+				040065541CE993D100716B9F /* XCFEventItem.m */,
+				040065561CE997B700716B9F /* XCFDishesItem.h */,
+				040065571CE997B700716B9F /* XCFDishesItem.m */,
+			);
+			name = HeaderModel;
+			sourceTree = "<group>";
+		};
+		0400655F1CE9F0DE00716B9F /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				04212FD11CE2F51000D64840 /* XCFHomeHeaderView.h */,
+				04212FD21CE2F51000D64840 /* XCFHomeHeaderView.m */,
+				04212FD41CE2F55400D64840 /* XCFHomeHeaderView.xib */,
+				04212FDC1CE32AFE00D64840 /* XCFNavButton.h */,
+				04212FDD1CE32AFE00D64840 /* XCFNavButton.m */,
+				040065591CE9BF8600716B9F /* XCFPopularEventView.h */,
+				0400655A1CE9BF8600716B9F /* XCFPopularEventView.m */,
+				0400655C1CE9BF9900716B9F /* XCFPopularEventView.xib */,
+			);
+			name = HeaderView;
+			sourceTree = "<group>";
+		};
 		044730081CD84BB000673F92 = {
 			isa = PBXGroup;
 			children = (
@@ -188,8 +237,7 @@
 		04EEDC261CD8792100AA64EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6B7E84141CE4D140006D7903 /* XCFNavButtonItem.h */,
-				6B7E84151CE4D140006D7903 /* XCFNavButtonItem.m */,
+				0400655E1CE9F0BF00716B9F /* HeaderModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,11 +245,7 @@
 		04EEDC271CD8792100AA64EF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04212FD11CE2F51000D64840 /* XCFHomeHeaderView.h */,
-				04212FD21CE2F51000D64840 /* XCFHomeHeaderView.m */,
-				04212FD41CE2F55400D64840 /* XCFHomeHeaderView.xib */,
-				04212FDC1CE32AFE00D64840 /* XCFNavButton.h */,
-				04212FDD1CE32AFE00D64840 /* XCFNavButton.m */,
+				0400655F1CE9F0DE00716B9F /* HeaderView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,6 +500,7 @@
 				046142761CD8C9FB005F0419 /* XCFLoginViewController.xib in Resources */,
 				044730241CD84BB100673F92 /* LaunchScreen.storyboard in Resources */,
 				044730211CD84BB100673F92 /* Assets.xcassets in Resources */,
+				0400655D1CE9BF9900716B9F /* XCFPopularEventView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,9 +559,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0400654F1CE9915600716B9F /* XCFContentItem.m in Sources */,
+				0400655B1CE9BF8600716B9F /* XCFPopularEventView.m in Sources */,
 				04212FDE1CE32AFE00D64840 /* XCFNavButton.m in Sources */,
 				04212FD01CE2C99100D64840 /* UIView+Extension.m in Sources */,
 				6B790A7E1CE2490400EAA45C /* XCFCommunityViewController.m in Sources */,
+				040065581CE997B700716B9F /* XCFDishesItem.m in Sources */,
 				0461426E1CD8C93F005F0419 /* XCFMarketViewController.m in Sources */,
 				04212FD81CE305AB00D64840 /* XCFConst.m in Sources */,
 				046238351CDCAC3E00D5B6C5 /* XCFNavigationController.m in Sources */,
@@ -524,10 +572,12 @@
 				044730191CD84BB100673F92 /* AppDelegate.m in Sources */,
 				6B790A7D1CE225C300EAA45C /* XCFSearchController.m in Sources */,
 				04212FDB1CE31AC600D64840 /* UIButton+Extension.m in Sources */,
+				040065551CE993D100716B9F /* XCFEventItem.m in Sources */,
 				6B790A761CE221F400EAA45C /* UIImage+Extension.m in Sources */,
 				6B790A7A1CE2222000EAA45C /* XCFSearchBar.m in Sources */,
 				046142791CD8CA8C005F0419 /* XCFSettingViewController.m in Sources */,
 				046142751CD8C9FB005F0419 /* XCFLoginViewController.m in Sources */,
+				040065521CE9935000716B9F /* XCFPopularEventsItem.m in Sources */,
 				6B790A751CE221F400EAA45C /* UIBarButtonItem+Extension.m in Sources */,
 				044730161CD84BB100673F92 /* main.m in Sources */,
 				04212FD31CE2F51000D64840 /* XCFHomeHeaderView.m in Sources */,

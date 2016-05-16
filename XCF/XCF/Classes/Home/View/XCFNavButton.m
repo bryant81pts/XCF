@@ -15,9 +15,11 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
+    
+        [self.titleLabel setFont:[UIFont systemFontOfSize:13.0]];
+        [self.titleLabel setTextAlignment:NSTextAlignmentCenter];
+        [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         
-        self.imageView.backgroundColor = [UIColor redColor];
-        self.titleLabel.font = [UIFont systemFontOfSize:13.0];
     }
     
     return self;
@@ -33,6 +35,7 @@
     
     CGFloat titleLabelCenterX = self.xcf_width * 0.5;
     CGFloat titleLabelCenterY = CGRectGetMaxY(self.imageView.frame) + 10.0;
+    self.titleLabel.xcf_width = self.xcf_width;
     self.titleLabel.center = CGPointMake(titleLabelCenterX, titleLabelCenterY);
     
 }

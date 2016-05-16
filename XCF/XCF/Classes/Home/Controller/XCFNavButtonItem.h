@@ -11,10 +11,11 @@
 
 @interface XCFNavButtonItem : NSObject
 
+/** 导航按钮对应的URL*/
 @property (nonatomic, strong) NSString *url;
-
+/** 导航按钮的title*/
 @property (nonatomic, strong) NSString *name;
-
+/** 导航按钮的图片*/
 @property (nonatomic, strong) NSString *picurl;
 
 @end
