@@ -8,4 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
+/** 首页HeaderView请求URL*/
 UIKIT_EXTERN NSString * const XCFHeaderViewRequestURL;

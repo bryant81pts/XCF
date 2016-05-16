@@ -13,12 +13,13 @@
 
 @interface XCFPopularEventView()
 
+/** 背景图片*/
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
-
+/** 作品类型(早餐\午餐\晚餐)Label*/
 @property (weak, nonatomic) IBOutlet UILabel *recipeTypeLabel;
-
+/** 作品数量*/
 @property (weak, nonatomic) IBOutlet UILabel *recipeCountLabel;
-
+/** 作品图片*/
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
 
 @end

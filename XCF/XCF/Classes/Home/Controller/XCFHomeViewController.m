@@ -29,7 +29,7 @@
     
     [self setupNavigationBar];
     [self setupTableHeaderView];
-    [self loadHeaderViewData];
+    [self loadData];
     
 
 }
@@ -77,8 +77,8 @@
     self.tableView.tableHeaderView = headerView;
 }
 
-/** 请求headerView数据*/
-- (void) loadHeaderViewData{
+/** 请求数据*/
+- (void) loadData{
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:XCFHeaderViewRequestURL parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -86,10 +86,10 @@
         XCFContentItem *item = [XCFContentItem mj_objectWithKeyValues:responseObject[@"content"]];
         XCFHomeHeaderView *headerView = (XCFHomeHeaderView *)self.tableView.tableHeaderView;
         headerView.item = item;
-        //[self.tableView reloadData];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
+        NSLog(@"%@",error);
     }];
     
     
@@ -121,12 +121,12 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
+
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+
     return 0;
 }
 
