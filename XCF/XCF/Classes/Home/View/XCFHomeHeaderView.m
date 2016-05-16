@@ -53,6 +53,8 @@
         
     }];
     
+    NSLog(@"%f", self.bottomScrollView.xcf_width);
+    
     //设置底部
     XCFPopularEventsItem *popularEventsItem = item.pop_events;
     NSInteger count = popularEventsItem.count;
@@ -82,13 +84,14 @@
     
     [self setupMiddleScrollView];
     [self setupBottomScrollView];
-
+    
 }
 
 - (void)setupMiddleScrollView{
     
     NSInteger buttonCount = 4;
-    CGFloat buttonWidth = self.middleScrollView.xcf_width / buttonCount;
+    /** 此时从xib加载出来的时候self.middleScrollView.xcf_width为375,为xib文件内所设定的值 如果要适配需要使用屏幕宽计算按钮宽*/
+    CGFloat buttonWidth = ScreenWidth / buttonCount;
     self.middleScrollView.backgroundColor = [UIColor whiteColor];
     self.middleScrollView.contentSize = CGSizeMake(buttonCount * buttonWidth + 1, 0);
     self.middleScrollView.showsHorizontalScrollIndicator = NO;
