@@ -18,7 +18,7 @@
 #import <UIImageView+WebCache.h>
 #import <UIButton+WebCache.h>
 
-@interface XCFHomeHeaderView()
+@interface XCFHomeHeaderView()<UIScrollViewDelegate>
 /** 流行菜谱*/
 @property (weak, nonatomic) IBOutlet UIImageView *popularRecipeImageView;
 /** 中部scrollView*/
@@ -27,6 +27,9 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *bottomScrollView;
 /** 中部scrollView中按钮的宽度*/
 @property (nonatomic, assign) CGFloat buttonWidth;
+/** 页码控件*/
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+
 
 
 @end
@@ -53,8 +56,6 @@
         
     }];
     
-    NSLog(@"%f", self.bottomScrollView.xcf_width);
-    
     //设置底部
     XCFPopularEventsItem *popularEventsItem = item.pop_events;
     NSInteger count = popularEventsItem.count;
@@ -69,7 +70,10 @@
         
     }
     
-    
+    if (count != 1) {
+        self.pageControl.hidden = NO;
+        self.pageControl.numberOfPages = count;
+    }
     
 }
 
@@ -115,6 +119,15 @@
     self.bottomScrollView.backgroundColor = [UIColor whiteColor];
     self.bottomScrollView.showsHorizontalScrollIndicator = NO;
     self.bottomScrollView.pagingEnabled = YES;
+    self.bottomScrollView.delegate = self;
+    
+}
+
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    
+    NSInteger page = (scrollView.contentOffset.x / scrollView.xcf_width + 0.5);
+    self.pageControl.currentPage = page;
 }
 
 

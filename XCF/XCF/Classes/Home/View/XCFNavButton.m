@@ -28,9 +28,9 @@
 - (void)layoutSubviews{
     [super layoutSubviews];
     /** 重新调整内部imageView和titleLabel的位置*/
-    CGFloat imageWH = 44;
+    CGFloat imageWH = 44.0;
     CGFloat imageX = (self.xcf_width - imageWH) * 0.5;
-    CGFloat imageY = 10;
+    CGFloat imageY = 5.0;
     self.imageView.frame = CGRectMake(imageX, imageY, imageWH, imageWH);
     
     CGFloat titleLabelCenterX = self.xcf_width * 0.5;

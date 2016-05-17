@@ -52,6 +52,8 @@
         
         self.backgroundImageView.image = [UIImage imageNamed:@"themeSmallPicForOthers_320x70_"];
     }
+    
+    
 
     
 }
