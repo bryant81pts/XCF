@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="247" id="KGk-i7-Jjw" customClass="XCFTemplateFourCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="247"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="246"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PF5-v2-95h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="246"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PF5-v2-95h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="24o-PU-npj"/>
+                    <constraint firstItem="PF5-v2-95h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GWp-K1-P1i"/>
+                    <constraint firstAttribute="bottom" secondItem="PF5-v2-95h" secondAttribute="bottom" id="SeR-gY-L0y"/>
+                    <constraint firstAttribute="trailing" secondItem="PF5-v2-95h" secondAttribute="trailing" id="xrw-iY-2pV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pictureImageView" destination="PF5-v2-95h" id="ZWs-lh-3sh"/>
+            </connections>
+            <point key="canvasLocation" x="326.5" y="272.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -58,9 +58,9 @@
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
+                                    <exclude reference="1ZA-qA-xlq"/>
                                     <exclude reference="Gol-lf-My6"/>
                                     <exclude reference="tqx-S0-o8L"/>
-                                    <exclude reference="1ZA-qA-xlq"/>
                                 </mask>
                             </variation>
                         </view>

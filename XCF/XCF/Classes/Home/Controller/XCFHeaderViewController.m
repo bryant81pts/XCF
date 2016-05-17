@@ -151,7 +151,7 @@
 
 - (void)headerViewButtonClick:(XCFNavButton *)button {
     
-    XCFFunc;
+    XCFLog(@"%ld",button.tag);
     
 }
 

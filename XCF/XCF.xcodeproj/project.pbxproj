@@ -13,6 +13,14 @@
 		040065581CE997B700716B9F /* XCFDishesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 040065571CE997B700716B9F /* XCFDishesItem.m */; };
 		0400655B1CE9BF8600716B9F /* XCFPopularEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400655A1CE9BF8600716B9F /* XCFPopularEventView.m */; };
 		0400655D1CE9BF9900716B9F /* XCFPopularEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0400655C1CE9BF9900716B9F /* XCFPopularEventView.xib */; };
+		0415C4941CEB397000B8DF73 /* XCFTemplateOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C4921CEB397000B8DF73 /* XCFTemplateOneCell.m */; };
+		0415C4951CEB397000B8DF73 /* XCFTemplateOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0415C4931CEB397000B8DF73 /* XCFTemplateOneCell.xib */; };
+		0415C49A1CEB3CCA00B8DF73 /* XCFTemplateTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C4981CEB3CCA00B8DF73 /* XCFTemplateTwoCell.m */; };
+		0415C49B1CEB3CCA00B8DF73 /* XCFTemplateTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0415C4991CEB3CCA00B8DF73 /* XCFTemplateTwoCell.xib */; };
+		0415C49F1CEB3E6300B8DF73 /* XCFTemplateFourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C49D1CEB3E6300B8DF73 /* XCFTemplateFourCell.m */; };
+		0415C4A01CEB3E6300B8DF73 /* XCFTemplateFourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0415C49E1CEB3E6300B8DF73 /* XCFTemplateFourCell.xib */; };
+		0415C4A41CEB3EDD00B8DF73 /* XCFTemplateFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C4A21CEB3EDD00B8DF73 /* XCFTemplateFiveCell.m */; };
+		0415C4A51CEB3EDD00B8DF73 /* XCFTemplateFiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0415C4A31CEB3EDD00B8DF73 /* XCFTemplateFiveCell.xib */; };
 		04212FD01CE2C99100D64840 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FCF1CE2C99100D64840 /* UIView+Extension.m */; };
 		04212FD81CE305AB00D64840 /* XCFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FD71CE305AB00D64840 /* XCFConst.m */; };
 		04212FDB1CE31AC600D64840 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FDA1CE31AC600D64840 /* UIButton+Extension.m */; };
@@ -54,6 +62,18 @@
 		040065591CE9BF8600716B9F /* XCFPopularEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFPopularEventView.h; sourceTree = "<group>"; };
 		0400655A1CE9BF8600716B9F /* XCFPopularEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFPopularEventView.m; sourceTree = "<group>"; };
 		0400655C1CE9BF9900716B9F /* XCFPopularEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFPopularEventView.xib; sourceTree = "<group>"; };
+		0415C4911CEB397000B8DF73 /* XCFTemplateOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFTemplateOneCell.h; sourceTree = "<group>"; };
+		0415C4921CEB397000B8DF73 /* XCFTemplateOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFTemplateOneCell.m; sourceTree = "<group>"; };
+		0415C4931CEB397000B8DF73 /* XCFTemplateOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFTemplateOneCell.xib; sourceTree = "<group>"; };
+		0415C4971CEB3CCA00B8DF73 /* XCFTemplateTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFTemplateTwoCell.h; sourceTree = "<group>"; };
+		0415C4981CEB3CCA00B8DF73 /* XCFTemplateTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFTemplateTwoCell.m; sourceTree = "<group>"; };
+		0415C4991CEB3CCA00B8DF73 /* XCFTemplateTwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFTemplateTwoCell.xib; sourceTree = "<group>"; };
+		0415C49C1CEB3E6300B8DF73 /* XCFTemplateFourCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFTemplateFourCell.h; sourceTree = "<group>"; };
+		0415C49D1CEB3E6300B8DF73 /* XCFTemplateFourCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFTemplateFourCell.m; sourceTree = "<group>"; };
+		0415C49E1CEB3E6300B8DF73 /* XCFTemplateFourCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFTemplateFourCell.xib; sourceTree = "<group>"; };
+		0415C4A11CEB3EDD00B8DF73 /* XCFTemplateFiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFTemplateFiveCell.h; sourceTree = "<group>"; };
+		0415C4A21CEB3EDD00B8DF73 /* XCFTemplateFiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFTemplateFiveCell.m; sourceTree = "<group>"; };
+		0415C4A31CEB3EDD00B8DF73 /* XCFTemplateFiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFTemplateFiveCell.xib; sourceTree = "<group>"; };
 		04212FCE1CE2C99100D64840 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		04212FCF1CE2C99100D64840 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		04212FD61CE305AB00D64840 /* XCFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFConst.h; sourceTree = "<group>"; };
@@ -145,6 +165,25 @@
 				0400655C1CE9BF9900716B9F /* XCFPopularEventView.xib */,
 			);
 			name = HeaderView;
+			sourceTree = "<group>";
+		};
+		0415C4961CEB397D00B8DF73 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0415C4911CEB397000B8DF73 /* XCFTemplateOneCell.h */,
+				0415C4921CEB397000B8DF73 /* XCFTemplateOneCell.m */,
+				0415C4931CEB397000B8DF73 /* XCFTemplateOneCell.xib */,
+				0415C4971CEB3CCA00B8DF73 /* XCFTemplateTwoCell.h */,
+				0415C4981CEB3CCA00B8DF73 /* XCFTemplateTwoCell.m */,
+				0415C4991CEB3CCA00B8DF73 /* XCFTemplateTwoCell.xib */,
+				0415C49C1CEB3E6300B8DF73 /* XCFTemplateFourCell.h */,
+				0415C49D1CEB3E6300B8DF73 /* XCFTemplateFourCell.m */,
+				0415C49E1CEB3E6300B8DF73 /* XCFTemplateFourCell.xib */,
+				0415C4A11CEB3EDD00B8DF73 /* XCFTemplateFiveCell.h */,
+				0415C4A21CEB3EDD00B8DF73 /* XCFTemplateFiveCell.m */,
+				0415C4A31CEB3EDD00B8DF73 /* XCFTemplateFiveCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		044730081CD84BB000673F92 = {
@@ -246,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				0400655F1CE9F0DE00716B9F /* HeaderView */,
+				0415C4961CEB397D00B8DF73 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -497,9 +537,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				046142761CD8C9FB005F0419 /* XCFLoginViewController.xib in Resources */,
+				0415C4A01CEB3E6300B8DF73 /* XCFTemplateFourCell.xib in Resources */,
 				044730241CD84BB100673F92 /* LaunchScreen.storyboard in Resources */,
 				044730211CD84BB100673F92 /* Assets.xcassets in Resources */,
+				0415C4A51CEB3EDD00B8DF73 /* XCFTemplateFiveCell.xib in Resources */,
+				0415C49B1CEB3CCA00B8DF73 /* XCFTemplateTwoCell.xib in Resources */,
 				0400655D1CE9BF9900716B9F /* XCFPopularEventView.xib in Resources */,
+				0415C4951CEB397000B8DF73 /* XCFTemplateOneCell.xib in Resources */,
 				04DAC29E1CEAE96000BA0A72 /* XCFHeaderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,6 +605,7 @@
 			files = (
 				0400654F1CE9915600716B9F /* XCFContentItem.m in Sources */,
 				0400655B1CE9BF8600716B9F /* XCFPopularEventView.m in Sources */,
+				0415C49F1CEB3E6300B8DF73 /* XCFTemplateFourCell.m in Sources */,
 				04212FDE1CE32AFE00D64840 /* XCFNavButton.m in Sources */,
 				04212FD01CE2C99100D64840 /* UIView+Extension.m in Sources */,
 				6B790A7E1CE2490400EAA45C /* XCFCommunityViewController.m in Sources */,
@@ -569,9 +614,11 @@
 				04212FD81CE305AB00D64840 /* XCFConst.m in Sources */,
 				04DAC29D1CEAE96000BA0A72 /* XCFHeaderViewController.m in Sources */,
 				046238351CDCAC3E00D5B6C5 /* XCFNavigationController.m in Sources */,
+				0415C49A1CEB3CCA00B8DF73 /* XCFTemplateTwoCell.m in Sources */,
 				6B7E84161CE4D140006D7903 /* XCFNavButtonItem.m in Sources */,
 				044730191CD84BB100673F92 /* AppDelegate.m in Sources */,
 				6B790A7D1CE225C300EAA45C /* XCFSearchController.m in Sources */,
+				0415C4A41CEB3EDD00B8DF73 /* XCFTemplateFiveCell.m in Sources */,
 				04212FDB1CE31AC600D64840 /* UIButton+Extension.m in Sources */,
 				040065551CE993D100716B9F /* XCFEventItem.m in Sources */,
 				6B790A761CE221F400EAA45C /* UIImage+Extension.m in Sources */,
@@ -580,6 +627,7 @@
 				046142751CD8C9FB005F0419 /* XCFLoginViewController.m in Sources */,
 				040065521CE9935000716B9F /* XCFPopularEventsItem.m in Sources */,
 				6B790A751CE221F400EAA45C /* UIBarButtonItem+Extension.m in Sources */,
+				0415C4941CEB397000B8DF73 /* XCFTemplateOneCell.m in Sources */,
 				044730161CD84BB100673F92 /* main.m in Sources */,
 				6B7E84191CE4E5BC006D7903 /* XCFURLConst.m in Sources */,
 				04EEDC3A1CD880AA00AA64EF /* XCFMainViewController.m in Sources */,
