@@ -14,8 +14,6 @@
 		0400655B1CE9BF8600716B9F /* XCFPopularEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400655A1CE9BF8600716B9F /* XCFPopularEventView.m */; };
 		0400655D1CE9BF9900716B9F /* XCFPopularEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0400655C1CE9BF9900716B9F /* XCFPopularEventView.xib */; };
 		04212FD01CE2C99100D64840 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FCF1CE2C99100D64840 /* UIView+Extension.m */; };
-		04212FD31CE2F51000D64840 /* XCFHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FD21CE2F51000D64840 /* XCFHomeHeaderView.m */; };
-		04212FD51CE2F55400D64840 /* XCFHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04212FD41CE2F55400D64840 /* XCFHomeHeaderView.xib */; };
 		04212FD81CE305AB00D64840 /* XCFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FD71CE305AB00D64840 /* XCFConst.m */; };
 		04212FDB1CE31AC600D64840 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FDA1CE31AC600D64840 /* UIButton+Extension.m */; };
 		04212FDE1CE32AFE00D64840 /* XCFNavButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FDD1CE32AFE00D64840 /* XCFNavButton.m */; };
@@ -30,6 +28,8 @@
 		046142791CD8CA8C005F0419 /* XCFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046142781CD8CA8C005F0419 /* XCFSettingViewController.m */; };
 		0461427C1CD8CAA0005F0419 /* XCFProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461427B1CD8CAA0005F0419 /* XCFProfileViewController.m */; };
 		046238351CDCAC3E00D5B6C5 /* XCFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046238341CDCAC3E00D5B6C5 /* XCFNavigationController.m */; };
+		04DAC29D1CEAE96000BA0A72 /* XCFHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC29B1CEAE96000BA0A72 /* XCFHeaderViewController.m */; };
+		04DAC29E1CEAE96000BA0A72 /* XCFHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DAC29C1CEAE96000BA0A72 /* XCFHeaderViewController.xib */; };
 		04EEDC3A1CD880AA00AA64EF /* XCFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEDC391CD880AA00AA64EF /* XCFMainViewController.m */; };
 		6B790A751CE221F400EAA45C /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B790A721CE221F400EAA45C /* UIBarButtonItem+Extension.m */; };
 		6B790A761CE221F400EAA45C /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B790A741CE221F400EAA45C /* UIImage+Extension.m */; };
@@ -56,9 +56,6 @@
 		0400655C1CE9BF9900716B9F /* XCFPopularEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFPopularEventView.xib; sourceTree = "<group>"; };
 		04212FCE1CE2C99100D64840 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		04212FCF1CE2C99100D64840 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		04212FD11CE2F51000D64840 /* XCFHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFHomeHeaderView.h; sourceTree = "<group>"; };
-		04212FD21CE2F51000D64840 /* XCFHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFHomeHeaderView.m; sourceTree = "<group>"; };
-		04212FD41CE2F55400D64840 /* XCFHomeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFHomeHeaderView.xib; sourceTree = "<group>"; };
 		04212FD61CE305AB00D64840 /* XCFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFConst.h; sourceTree = "<group>"; };
 		04212FD71CE305AB00D64840 /* XCFConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFConst.m; sourceTree = "<group>"; };
 		04212FD91CE31AC600D64840 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
@@ -88,6 +85,9 @@
 		046238341CDCAC3E00D5B6C5 /* XCFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFNavigationController.m; sourceTree = "<group>"; };
 		046719091CE1F7DB00044F65 /* XCFCommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFCommunityViewController.h; sourceTree = "<group>"; };
 		0467190A1CE1F7DB00044F65 /* XCFCommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFCommunityViewController.m; sourceTree = "<group>"; };
+		04DAC29A1CEAE96000BA0A72 /* XCFHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFHeaderViewController.h; sourceTree = "<group>"; };
+		04DAC29B1CEAE96000BA0A72 /* XCFHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFHeaderViewController.m; sourceTree = "<group>"; };
+		04DAC29C1CEAE96000BA0A72 /* XCFHeaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFHeaderViewController.xib; sourceTree = "<group>"; };
 		04EEDC381CD880AA00AA64EF /* XCFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFMainViewController.h; sourceTree = "<group>"; };
 		04EEDC391CD880AA00AA64EF /* XCFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFMainViewController.m; sourceTree = "<group>"; };
 		6B790A711CE221F400EAA45C /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
@@ -138,9 +138,6 @@
 		0400655F1CE9F0DE00716B9F /* HeaderView */ = {
 			isa = PBXGroup;
 			children = (
-				04212FD11CE2F51000D64840 /* XCFHomeHeaderView.h */,
-				04212FD21CE2F51000D64840 /* XCFHomeHeaderView.m */,
-				04212FD41CE2F55400D64840 /* XCFHomeHeaderView.xib */,
 				04212FDC1CE32AFE00D64840 /* XCFNavButton.h */,
 				04212FDD1CE32AFE00D64840 /* XCFNavButton.m */,
 				040065591CE9BF8600716B9F /* XCFPopularEventView.h */,
@@ -230,6 +227,9 @@
 				0461426A1CD8C720005F0419 /* XCFHomeViewController.m */,
 				6B790A7B1CE225C300EAA45C /* XCFSearchController.h */,
 				6B790A7C1CE225C300EAA45C /* XCFSearchController.m */,
+				04DAC29A1CEAE96000BA0A72 /* XCFHeaderViewController.h */,
+				04DAC29B1CEAE96000BA0A72 /* XCFHeaderViewController.m */,
+				04DAC29C1CEAE96000BA0A72 /* XCFHeaderViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -496,11 +496,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04212FD51CE2F55400D64840 /* XCFHomeHeaderView.xib in Resources */,
 				046142761CD8C9FB005F0419 /* XCFLoginViewController.xib in Resources */,
 				044730241CD84BB100673F92 /* LaunchScreen.storyboard in Resources */,
 				044730211CD84BB100673F92 /* Assets.xcassets in Resources */,
 				0400655D1CE9BF9900716B9F /* XCFPopularEventView.xib in Resources */,
+				04DAC29E1CEAE96000BA0A72 /* XCFHeaderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +567,7 @@
 				040065581CE997B700716B9F /* XCFDishesItem.m in Sources */,
 				0461426E1CD8C93F005F0419 /* XCFMarketViewController.m in Sources */,
 				04212FD81CE305AB00D64840 /* XCFConst.m in Sources */,
+				04DAC29D1CEAE96000BA0A72 /* XCFHeaderViewController.m in Sources */,
 				046238351CDCAC3E00D5B6C5 /* XCFNavigationController.m in Sources */,
 				6B7E84161CE4D140006D7903 /* XCFNavButtonItem.m in Sources */,
 				044730191CD84BB100673F92 /* AppDelegate.m in Sources */,
@@ -580,7 +581,6 @@
 				040065521CE9935000716B9F /* XCFPopularEventsItem.m in Sources */,
 				6B790A751CE221F400EAA45C /* UIBarButtonItem+Extension.m in Sources */,
 				044730161CD84BB100673F92 /* main.m in Sources */,
-				04212FD31CE2F51000D64840 /* XCFHomeHeaderView.m in Sources */,
 				6B7E84191CE4E5BC006D7903 /* XCFURLConst.m in Sources */,
 				04EEDC3A1CD880AA00AA64EF /* XCFMainViewController.m in Sources */,
 				0461426B1CD8C720005F0419 /* XCFHomeViewController.m in Sources */,

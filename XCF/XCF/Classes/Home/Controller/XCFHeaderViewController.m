@@ -1,12 +1,12 @@
 //
-//  XCFHomeHeaderView.m
+//  XCFHeaderViewController.m
 //  XCF
 //
-//  Created by  Mac on 16/5/11.
+//  Created by  Mac on 16/5/17.
 //  Copyright © 2016年 dalpha. All rights reserved.
 //
 
-#import "XCFHomeHeaderView.h"
+#import "XCFHeaderViewController.h"
 #import "XCFNavButton.h"
 #import "XCFPopularEventView.h"
 #import "XCFContentItem.h"
@@ -18,7 +18,8 @@
 #import <UIImageView+WebCache.h>
 #import <UIButton+WebCache.h>
 
-@interface XCFHomeHeaderView()<UIScrollViewDelegate>
+@interface XCFHeaderViewController ()<UIScrollViewDelegate>
+
 /** 流行菜谱*/
 @property (weak, nonatomic) IBOutlet UIImageView *popularRecipeImageView;
 /** 中部scrollView*/
@@ -30,11 +31,10 @@
 /** 页码控件*/
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
-
-
 @end
 
-@implementation XCFHomeHeaderView
+@implementation XCFHeaderViewController
+
 
 - (void)setItem:(XCFContentItem *)item{
     
@@ -42,6 +42,9 @@
     
     //设置顶部
     [self.popularRecipeImageView sd_setImageWithURL:[NSURL URLWithString:item.pop_recipe_picurl]];
+    UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapPopularRecipe)];
+    [self.popularRecipeImageView addGestureRecognizer:tapGes];
+    
     
     //设置中间
     NSArray *navButtonsArray = item.navs;
@@ -63,6 +66,8 @@
     for (int i = 0; i < count; i++) {
         
         XCFPopularEventView *popularEventView = [XCFPopularEventView popularEventView];
+        UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapPopularEventView)];
+        [popularEventView addGestureRecognizer:tapGes];
         XCFEventItem *item = popularEventsItem.events[i];
         [self.bottomScrollView addSubview:popularEventView];
         popularEventView.frame = CGRectMake(i * self.bottomScrollView.xcf_width, 0, self.bottomScrollView.xcf_width, self.bottomScrollView.xcf_height);
@@ -77,18 +82,14 @@
     
 }
 
-+ (instancetype)homeHeaderView{
-    
-    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class])
-                                          owner:nil
-                                        options:nil] firstObject];
-}
 
-- (void)awakeFromNib{
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
     [self setupMiddleScrollView];
     [self setupBottomScrollView];
-    
+
 }
 
 - (void)setupMiddleScrollView{
@@ -134,7 +135,7 @@
 - (void)addConstraintToMiddleScrollViewButton:(UIButton *)button
                                   buttonWidth:(CGFloat)buttonWidth
                                    leftMargin:(CGFloat) leftMargin{
- 
+    
     [button mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.equalTo(self.middleScrollView.mas_top);
@@ -146,11 +147,23 @@
     
 }
 
+
+
 - (void)headerViewButtonClick:(XCFNavButton *)button {
     
     XCFFunc;
     
 }
 
+- (void)tapPopularRecipe{
+    
+    XCFFunc;
+}
+
+- (void)tapPopularEventView{
+    
+    XCFFunc;
+    
+}
 
 @end

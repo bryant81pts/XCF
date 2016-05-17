@@ -7,16 +7,14 @@
 //
 
 #import "XCFHomeViewController.h"
-#import "XCFSearchBar.h"
 #import "XCFSearchController.h"
-#import "XCFHomeHeaderView.h"
+#import "XCFHeaderViewController.h"
+#import "XCFSearchBar.h"
 #import "XCFContentItem.h"
 #import <AFNetworking/AFNetworking.h>
 #import <MJExtension/MJExtension.h>
 
-
 @interface XCFHomeViewController ()
-
 
 @end
 
@@ -26,12 +24,9 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = ThemeColor;
-    
     [self setupNavigationBar];
     [self setupTableHeaderView];
     [self loadData];
-    
-
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -71,10 +66,11 @@
 
 - (void)setupTableHeaderView{
     
-    XCFHomeHeaderView *headerView = [XCFHomeHeaderView homeHeaderView];
-    headerView.backgroundColor = [UIColor whiteColor];
-    headerView.bounds = CGRectMake(0, 0, ScreenWidth, XCFHomeHeaderHeight);
-    self.tableView.tableHeaderView = headerView;
+    XCFHeaderViewController *headerViewController = [[XCFHeaderViewController alloc] init];
+    [self addChildViewController:headerViewController];
+    headerViewController.view.bounds = CGRectMake(0, 0, ScreenWidth, XCFHomeHeaderHeight);
+    self.tableView.tableHeaderView = headerViewController.view;
+    
 }
 
 /** 请求数据*/
@@ -84,8 +80,8 @@
     [manager GET:XCFHeaderViewRequestURL parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         XCFContentItem *item = [XCFContentItem mj_objectWithKeyValues:responseObject[@"content"]];
-        XCFHomeHeaderView *headerView = (XCFHomeHeaderView *)self.tableView.tableHeaderView;
-        headerView.item = item;
+        XCFHeaderViewController *headerViewController = (XCFHeaderViewController *)self.childViewControllers[0];
+        headerViewController.item = item;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
