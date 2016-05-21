@@ -21,6 +21,13 @@
 		0415C4A01CEB3E6300B8DF73 /* XCFTemplateFourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0415C49E1CEB3E6300B8DF73 /* XCFTemplateFourCell.xib */; };
 		0415C4A41CEB3EDD00B8DF73 /* XCFTemplateFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C4A21CEB3EDD00B8DF73 /* XCFTemplateFiveCell.m */; };
 		0415C4A51CEB3EDD00B8DF73 /* XCFTemplateFiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0415C4A31CEB3EDD00B8DF73 /* XCFTemplateFiveCell.xib */; };
+		0415C5551CF004D100B8DF73 /* XCFCellContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C5541CF004D100B8DF73 /* XCFCellContentItem.m */; };
+		0415C5581CF0054A00B8DF73 /* XCFCellCursorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C5571CF0054A00B8DF73 /* XCFCellCursorItem.m */; };
+		0415C55B1CF005E400B8DF73 /* XCFCellIssuesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C55A1CF005E400B8DF73 /* XCFCellIssuesItem.m */; };
+		0415C55E1CF0072800B8DF73 /* XCFCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C55D1CF0072800B8DF73 /* XCFCellItem.m */; };
+		0415C5611CF0171200B8DF73 /* XCFCellIssuesContentsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C5601CF0171200B8DF73 /* XCFCellIssuesContentsItem.m */; };
+		0415C5641CF0181300B8DF73 /* XCFAuthorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C5631CF0181300B8DF73 /* XCFAuthorItem.m */; };
+		0415C5671CF0184100B8DF73 /* XCFImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C5661CF0184100B8DF73 /* XCFImageItem.m */; };
 		04212FD01CE2C99100D64840 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FCF1CE2C99100D64840 /* UIView+Extension.m */; };
 		04212FD81CE305AB00D64840 /* XCFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FD71CE305AB00D64840 /* XCFConst.m */; };
 		04212FDB1CE31AC600D64840 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FDA1CE31AC600D64840 /* UIButton+Extension.m */; };
@@ -74,6 +81,20 @@
 		0415C4A11CEB3EDD00B8DF73 /* XCFTemplateFiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFTemplateFiveCell.h; sourceTree = "<group>"; };
 		0415C4A21CEB3EDD00B8DF73 /* XCFTemplateFiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFTemplateFiveCell.m; sourceTree = "<group>"; };
 		0415C4A31CEB3EDD00B8DF73 /* XCFTemplateFiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFTemplateFiveCell.xib; sourceTree = "<group>"; };
+		0415C5531CF004D100B8DF73 /* XCFCellContentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFCellContentItem.h; sourceTree = "<group>"; };
+		0415C5541CF004D100B8DF73 /* XCFCellContentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFCellContentItem.m; sourceTree = "<group>"; };
+		0415C5561CF0054A00B8DF73 /* XCFCellCursorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFCellCursorItem.h; sourceTree = "<group>"; };
+		0415C5571CF0054A00B8DF73 /* XCFCellCursorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFCellCursorItem.m; sourceTree = "<group>"; };
+		0415C5591CF005E400B8DF73 /* XCFCellIssuesItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFCellIssuesItem.h; sourceTree = "<group>"; };
+		0415C55A1CF005E400B8DF73 /* XCFCellIssuesItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFCellIssuesItem.m; sourceTree = "<group>"; };
+		0415C55C1CF0072800B8DF73 /* XCFCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFCellItem.h; sourceTree = "<group>"; };
+		0415C55D1CF0072800B8DF73 /* XCFCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFCellItem.m; sourceTree = "<group>"; };
+		0415C55F1CF0171200B8DF73 /* XCFCellIssuesContentsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFCellIssuesContentsItem.h; sourceTree = "<group>"; };
+		0415C5601CF0171200B8DF73 /* XCFCellIssuesContentsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFCellIssuesContentsItem.m; sourceTree = "<group>"; };
+		0415C5621CF0181300B8DF73 /* XCFAuthorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFAuthorItem.h; sourceTree = "<group>"; };
+		0415C5631CF0181300B8DF73 /* XCFAuthorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFAuthorItem.m; sourceTree = "<group>"; };
+		0415C5651CF0184100B8DF73 /* XCFImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFImageItem.h; sourceTree = "<group>"; };
+		0415C5661CF0184100B8DF73 /* XCFImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFImageItem.m; sourceTree = "<group>"; };
 		04212FCE1CE2C99100D64840 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		04212FCF1CE2C99100D64840 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		04212FD61CE305AB00D64840 /* XCFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFConst.h; sourceTree = "<group>"; };
@@ -186,6 +207,27 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		0415C5521CF003BB00B8DF73 /* CellModel */ = {
+			isa = PBXGroup;
+			children = (
+				0415C5531CF004D100B8DF73 /* XCFCellContentItem.h */,
+				0415C5541CF004D100B8DF73 /* XCFCellContentItem.m */,
+				0415C5561CF0054A00B8DF73 /* XCFCellCursorItem.h */,
+				0415C5571CF0054A00B8DF73 /* XCFCellCursorItem.m */,
+				0415C5591CF005E400B8DF73 /* XCFCellIssuesItem.h */,
+				0415C55A1CF005E400B8DF73 /* XCFCellIssuesItem.m */,
+				0415C55C1CF0072800B8DF73 /* XCFCellItem.h */,
+				0415C55D1CF0072800B8DF73 /* XCFCellItem.m */,
+				0415C55F1CF0171200B8DF73 /* XCFCellIssuesContentsItem.h */,
+				0415C5601CF0171200B8DF73 /* XCFCellIssuesContentsItem.m */,
+				0415C5621CF0181300B8DF73 /* XCFAuthorItem.h */,
+				0415C5631CF0181300B8DF73 /* XCFAuthorItem.m */,
+				0415C5651CF0184100B8DF73 /* XCFImageItem.h */,
+				0415C5661CF0184100B8DF73 /* XCFImageItem.m */,
+			);
+			name = CellModel;
+			sourceTree = "<group>";
+		};
 		044730081CD84BB000673F92 = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				0400655E1CE9F0BF00716B9F /* HeaderModel */,
+				0415C5521CF003BB00B8DF73 /* CellModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -605,12 +648,14 @@
 			files = (
 				0400654F1CE9915600716B9F /* XCFContentItem.m in Sources */,
 				0400655B1CE9BF8600716B9F /* XCFPopularEventView.m in Sources */,
+				0415C55E1CF0072800B8DF73 /* XCFCellItem.m in Sources */,
 				0415C49F1CEB3E6300B8DF73 /* XCFTemplateFourCell.m in Sources */,
 				04212FDE1CE32AFE00D64840 /* XCFNavButton.m in Sources */,
 				04212FD01CE2C99100D64840 /* UIView+Extension.m in Sources */,
 				6B790A7E1CE2490400EAA45C /* XCFCommunityViewController.m in Sources */,
 				040065581CE997B700716B9F /* XCFDishesItem.m in Sources */,
 				0461426E1CD8C93F005F0419 /* XCFMarketViewController.m in Sources */,
+				0415C5671CF0184100B8DF73 /* XCFImageItem.m in Sources */,
 				04212FD81CE305AB00D64840 /* XCFConst.m in Sources */,
 				04DAC29D1CEAE96000BA0A72 /* XCFHeaderViewController.m in Sources */,
 				046238351CDCAC3E00D5B6C5 /* XCFNavigationController.m in Sources */,
@@ -618,18 +663,23 @@
 				6B7E84161CE4D140006D7903 /* XCFNavButtonItem.m in Sources */,
 				044730191CD84BB100673F92 /* AppDelegate.m in Sources */,
 				6B790A7D1CE225C300EAA45C /* XCFSearchController.m in Sources */,
+				0415C55B1CF005E400B8DF73 /* XCFCellIssuesItem.m in Sources */,
+				0415C5641CF0181300B8DF73 /* XCFAuthorItem.m in Sources */,
 				0415C4A41CEB3EDD00B8DF73 /* XCFTemplateFiveCell.m in Sources */,
 				04212FDB1CE31AC600D64840 /* UIButton+Extension.m in Sources */,
 				040065551CE993D100716B9F /* XCFEventItem.m in Sources */,
 				6B790A761CE221F400EAA45C /* UIImage+Extension.m in Sources */,
+				0415C5611CF0171200B8DF73 /* XCFCellIssuesContentsItem.m in Sources */,
 				6B790A7A1CE2222000EAA45C /* XCFSearchBar.m in Sources */,
 				046142791CD8CA8C005F0419 /* XCFSettingViewController.m in Sources */,
 				046142751CD8C9FB005F0419 /* XCFLoginViewController.m in Sources */,
 				040065521CE9935000716B9F /* XCFPopularEventsItem.m in Sources */,
 				6B790A751CE221F400EAA45C /* UIBarButtonItem+Extension.m in Sources */,
 				0415C4941CEB397000B8DF73 /* XCFTemplateOneCell.m in Sources */,
+				0415C5551CF004D100B8DF73 /* XCFCellContentItem.m in Sources */,
 				044730161CD84BB100673F92 /* main.m in Sources */,
 				6B7E84191CE4E5BC006D7903 /* XCFURLConst.m in Sources */,
+				0415C5581CF0054A00B8DF73 /* XCFCellCursorItem.m in Sources */,
 				04EEDC3A1CD880AA00AA64EF /* XCFMainViewController.m in Sources */,
 				0461426B1CD8C720005F0419 /* XCFHomeViewController.m in Sources */,
 				0461427C1CD8CAA0005F0419 /* XCFProfileViewController.m in Sources */,

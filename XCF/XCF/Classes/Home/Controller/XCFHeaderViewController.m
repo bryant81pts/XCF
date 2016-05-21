@@ -17,8 +17,12 @@
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>
 #import <UIButton+WebCache.h>
+#import <AFNetworking/AFNetworking.h>
+#import <MJExtension/MJExtension.h>
 
 @interface XCFHeaderViewController ()<UIScrollViewDelegate>
+
+@property (nonatomic, strong)XCFContentItem *item;
 
 /** 流行菜谱*/
 @property (weak, nonatomic) IBOutlet UIImageView *popularRecipeImageView;
@@ -86,9 +90,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = ThemeColor;
     [self setupMiddleScrollView];
     [self setupBottomScrollView];
+    [self loadData];
 
 }
 
@@ -117,10 +122,24 @@
 
 - (void)setupBottomScrollView{
     
-    self.bottomScrollView.backgroundColor = [UIColor whiteColor];
     self.bottomScrollView.showsHorizontalScrollIndicator = NO;
     self.bottomScrollView.pagingEnabled = YES;
     self.bottomScrollView.delegate = self;
+    
+}
+
+- (void)loadData{
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:XCFHeaderViewRequestURL parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        XCFContentItem *item = [XCFContentItem mj_objectWithKeyValues:responseObject[@"content"]];
+        self.item = item;
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        NSLog(@"%@",error);
+    }];
     
 }
 

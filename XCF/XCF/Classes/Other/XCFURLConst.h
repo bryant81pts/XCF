@@ -10,3 +10,6 @@
 
 /** 首页HeaderView请求URL*/
 UIKIT_EXTERN NSString * const XCFHeaderViewRequestURL;
+
+/** 首页TableView请求URL*/
+UIKIT_EXTERN NSString * const XCFTableViewRequestURL;

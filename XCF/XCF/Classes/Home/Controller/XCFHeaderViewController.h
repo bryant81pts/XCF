@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class XCFContentItem;
+//@class XCFContentItem;
 @interface XCFHeaderViewController : UIViewController
 
-@property (nonatomic, strong)XCFContentItem *item;
+
 
 @end
