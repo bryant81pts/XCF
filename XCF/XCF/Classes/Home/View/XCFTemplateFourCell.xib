@@ -7,28 +7,45 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="247" id="KGk-i7-Jjw" customClass="XCFTemplateFourCell">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="247"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="templateFour" rowHeight="378" id="KGk-i7-Jjw" customClass="XCFTemplateFourCell">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="378"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="246"/>
+                <rect key="frame" x="0.0" y="0.0" width="380" height="377"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PF5-v2-95h">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="246"/>
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="377"/>
                     </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8a1-dI-WNR">
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="377"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="虐狗日结束!今日太阳照常升起" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rke-bY-VHM">
+                        <rect key="frame" x="77" y="178" width="227" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="PF5-v2-95h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="24o-PU-npj"/>
+                    <constraint firstItem="Rke-bY-VHM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7xG-0m-YrS"/>
                     <constraint firstItem="PF5-v2-95h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GWp-K1-P1i"/>
                     <constraint firstAttribute="bottom" secondItem="PF5-v2-95h" secondAttribute="bottom" id="SeR-gY-L0y"/>
+                    <constraint firstItem="8a1-dI-WNR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WtB-hf-0Az"/>
+                    <constraint firstItem="Rke-bY-VHM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ZCW-Hi-dLD"/>
+                    <constraint firstAttribute="trailing" secondItem="8a1-dI-WNR" secondAttribute="trailing" id="gQW-nF-p60"/>
+                    <constraint firstAttribute="bottom" secondItem="8a1-dI-WNR" secondAttribute="bottom" id="k3e-ak-uo7"/>
+                    <constraint firstItem="8a1-dI-WNR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oyZ-L8-MXs"/>
                     <constraint firstAttribute="trailing" secondItem="PF5-v2-95h" secondAttribute="trailing" id="xrw-iY-2pV"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="pictureImageView" destination="PF5-v2-95h" id="ZWs-lh-3sh"/>
+                <outlet property="whisperLabel" destination="Rke-bY-VHM" id="BBB-av-BxQ"/>
             </connections>
-            <point key="canvasLocation" x="326.5" y="272.5"/>
+            <point key="canvasLocation" x="329" y="338"/>
         </tableViewCell>
     </objects>
 </document>

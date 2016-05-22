@@ -1,37 +1,29 @@
 //
-//  XCFTemplateTwoCell.m
+//  XCFTemplateSixCell.m
 //  XCF
 //
-//  Created by  Mac on 16/5/17.
+//  Created by  Mac on 16/5/22.
 //  Copyright © 2016年 dalpha. All rights reserved.
 //
 
-#import "XCFTemplateTwoCell.h"
+#import "XCFTemplateSixCell.h"
 
 #import "XCFCellIssuesContentsItem.h"
 #import "XCFImageItem.h"
 #import <UIImageView+WebCache.h>
 
-@interface XCFTemplateTwoCell()
-/** 图片*/
+@interface XCFTemplateSixCell()
+
 @property (weak, nonatomic) IBOutlet UIImageView *pictureImageView;
-/** 标题*/
-@property (weak, nonatomic) IBOutlet UILabel *title_Label;
-/** 描述*/
-@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @end
 
-@implementation XCFTemplateTwoCell
+@implementation XCFTemplateSixCell
 
 - (void)setItem:(XCFCellIssuesContentsItem *)item{
     
     _item = item;
     
-    self.backgroundColor = [UIColor redColor];
-    
-    self.title_Label.text = item.title_1st;
-    self.title_Label.text = item.title_2nd;
     [self.pictureImageView sd_setImageWithURL:[NSURL URLWithString:item.image.url]];
 }
 

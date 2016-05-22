@@ -32,6 +32,9 @@
 		04212FD81CE305AB00D64840 /* XCFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FD71CE305AB00D64840 /* XCFConst.m */; };
 		04212FDB1CE31AC600D64840 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FDA1CE31AC600D64840 /* UIButton+Extension.m */; };
 		04212FDE1CE32AFE00D64840 /* XCFNavButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04212FDD1CE32AFE00D64840 /* XCFNavButton.m */; };
+		0436D1A11CF149FA002CAB0A /* XCFTemplateSixCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436D19F1CF149FA002CAB0A /* XCFTemplateSixCell.m */; };
+		0436D1A21CF149FA002CAB0A /* XCFTemplateSixCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436D1A01CF149FA002CAB0A /* XCFTemplateSixCell.xib */; };
+		0436D1B51CF1AEFD002CAB0A /* XCFBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436D1B41CF1AEFD002CAB0A /* XCFBaseCell.m */; };
 		044730161CD84BB100673F92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044730151CD84BB100673F92 /* main.m */; };
 		044730191CD84BB100673F92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044730181CD84BB100673F92 /* AppDelegate.m */; };
 		044730211CD84BB100673F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044730201CD84BB100673F92 /* Assets.xcassets */; };
@@ -103,6 +106,11 @@
 		04212FDA1CE31AC600D64840 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		04212FDC1CE32AFE00D64840 /* XCFNavButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFNavButton.h; sourceTree = "<group>"; };
 		04212FDD1CE32AFE00D64840 /* XCFNavButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFNavButton.m; sourceTree = "<group>"; };
+		0436D19E1CF149FA002CAB0A /* XCFTemplateSixCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFTemplateSixCell.h; sourceTree = "<group>"; };
+		0436D19F1CF149FA002CAB0A /* XCFTemplateSixCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFTemplateSixCell.m; sourceTree = "<group>"; };
+		0436D1A01CF149FA002CAB0A /* XCFTemplateSixCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFTemplateSixCell.xib; sourceTree = "<group>"; };
+		0436D1B31CF1AEFD002CAB0A /* XCFBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFBaseCell.h; sourceTree = "<group>"; };
+		0436D1B41CF1AEFD002CAB0A /* XCFBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFBaseCell.m; sourceTree = "<group>"; };
 		044730111CD84BB100673F92 /* XCF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044730151CD84BB100673F92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		044730171CD84BB100673F92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -191,6 +199,8 @@
 		0415C4961CEB397D00B8DF73 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				0436D1B31CF1AEFD002CAB0A /* XCFBaseCell.h */,
+				0436D1B41CF1AEFD002CAB0A /* XCFBaseCell.m */,
 				0415C4911CEB397000B8DF73 /* XCFTemplateOneCell.h */,
 				0415C4921CEB397000B8DF73 /* XCFTemplateOneCell.m */,
 				0415C4931CEB397000B8DF73 /* XCFTemplateOneCell.xib */,
@@ -203,6 +213,9 @@
 				0415C4A11CEB3EDD00B8DF73 /* XCFTemplateFiveCell.h */,
 				0415C4A21CEB3EDD00B8DF73 /* XCFTemplateFiveCell.m */,
 				0415C4A31CEB3EDD00B8DF73 /* XCFTemplateFiveCell.xib */,
+				0436D19E1CF149FA002CAB0A /* XCFTemplateSixCell.h */,
+				0436D19F1CF149FA002CAB0A /* XCFTemplateSixCell.m */,
+				0436D1A01CF149FA002CAB0A /* XCFTemplateSixCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -581,6 +594,7 @@
 			files = (
 				046142761CD8C9FB005F0419 /* XCFLoginViewController.xib in Resources */,
 				0415C4A01CEB3E6300B8DF73 /* XCFTemplateFourCell.xib in Resources */,
+				0436D1A21CF149FA002CAB0A /* XCFTemplateSixCell.xib in Resources */,
 				044730241CD84BB100673F92 /* LaunchScreen.storyboard in Resources */,
 				044730211CD84BB100673F92 /* Assets.xcassets in Resources */,
 				0415C4A51CEB3EDD00B8DF73 /* XCFTemplateFiveCell.xib in Resources */,
@@ -673,7 +687,9 @@
 				6B790A7A1CE2222000EAA45C /* XCFSearchBar.m in Sources */,
 				046142791CD8CA8C005F0419 /* XCFSettingViewController.m in Sources */,
 				046142751CD8C9FB005F0419 /* XCFLoginViewController.m in Sources */,
+				0436D1B51CF1AEFD002CAB0A /* XCFBaseCell.m in Sources */,
 				040065521CE9935000716B9F /* XCFPopularEventsItem.m in Sources */,
+				0436D1A11CF149FA002CAB0A /* XCFTemplateSixCell.m in Sources */,
 				6B790A751CE221F400EAA45C /* UIBarButtonItem+Extension.m in Sources */,
 				0415C4941CEB397000B8DF73 /* XCFTemplateOneCell.m in Sources */,
 				0415C5551CF004D100B8DF73 /* XCFCellContentItem.m in Sources */,

@@ -7,6 +7,9 @@
 //
 
 #import "XCFTemplateOneCell.h"
+#import "XCFCellIssuesContentsItem.h"
+#import "XCFImageItem.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface XCFTemplateOneCell()
 
@@ -20,8 +23,17 @@
 
 @implementation XCFTemplateOneCell
 
+- (void)setItem:(XCFCellIssuesContentsItem *)item{
+    
+    _item = item;
+    
+    self.title_Label.text = item.title;
+    self.descriptionLabel.text = item.desc;
+    [self.pictureImageView sd_setImageWithURL:[NSURL URLWithString:item.image.url]];
+}
+
 - (void)awakeFromNib {
-    // Initialization code
+    self.pictureImageView.clipsToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

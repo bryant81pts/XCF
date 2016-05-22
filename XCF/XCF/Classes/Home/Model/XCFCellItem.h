@@ -15,12 +15,15 @@
 /** 对应的url*/
 @property (nonatomic, strong) NSString *url;
 /** cell的模板*/
-@property (nonatomic, assign) NSInteger _template; //template
+@property (nonatomic, assign) NSInteger cellTemplate; //template
 /** cell对应的id*/
 @property (nonatomic, assign) NSInteger ID; //id
 /** cell内容的模型->真正描述cell的模型*/
 @property (nonatomic, strong) XCFCellIssuesContentsItem *contents;
 /** ???*/
 @property (nonatomic, strong) NSString *column_name;
+
+
+
 
 @end

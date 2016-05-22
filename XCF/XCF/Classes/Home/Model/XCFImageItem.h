@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface XCFImageItem : NSObject
-/** 点击图片对应的url*/
+/** 图片对应的url*/
 @property (nonatomic, strong) NSString *url;
 /** 图片宽度*/
-@property (nonatomic, strong) NSString *width;
+@property (nonatomic, assign) NSInteger width;
 /** 图片高度*/
-@property (nonatomic, strong) NSString *height;
+@property (nonatomic, assign) NSInteger height;
 
 @end

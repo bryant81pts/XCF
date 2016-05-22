@@ -6,8 +6,11 @@
 //  Copyright © 2016年 dalpha. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XCFBaseCell.h"
 
-@interface XCFTemplateFiveCell : UITableViewCell
+@class XCFCellIssuesContentsItem;
+@interface XCFTemplateFiveCell : XCFBaseCell
+
+@property (nonatomic, strong)XCFCellIssuesContentsItem *item;
 
 @end

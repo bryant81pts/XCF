@@ -11,3 +11,9 @@
 /** 主页HeaderView的高度*/
 UIKIT_EXTERN CGFloat const XCFHomeHeaderHeight;
 
+/** cell作者头像宽度*/
+UIKIT_EXTERN CGFloat const XCFAuthorIconWH;
+
+/** 通用margin*/
+UIKIT_EXTERN CGFloat const XCFMargin;
+

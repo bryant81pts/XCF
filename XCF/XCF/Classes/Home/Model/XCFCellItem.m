@@ -8,17 +8,30 @@
 
 #import "XCFCellItem.h"
 #import <MJExtension.h>
+#import "XCFCellIssuesContentsItem.h"
 @implementation XCFCellItem
 
 + (NSDictionary *)mj_replacedKeyFromPropertyName{
     
     return @{
              
-             @"template" : @"_template",
-             @"id" : @"ID"
+             @"cellTemplate" : @"template",
+             @"ID" : @"id"
              
              };
 }
+
+- (void)setContents:(XCFCellIssuesContentsItem *)contents{
+    
+    _contents = contents;
+    
+    //NSLog(@"%ld",_cellTemplate);
+    
+    contents.cellTemplate = _cellTemplate;
+}
+
+
+
 
 
 @end
