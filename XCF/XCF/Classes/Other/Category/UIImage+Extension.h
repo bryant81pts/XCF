@@ -12,4 +12,6 @@
 
 + (UIImage *)originalImageWithImageName:(NSString *)imageName;
 
++ (UIImage *)roundImageWithOriginalImage:(UIImage *)image;
+
 @end

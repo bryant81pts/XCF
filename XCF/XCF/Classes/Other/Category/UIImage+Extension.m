@@ -17,4 +17,20 @@
     
 }
 
++ (UIImage *)roundImageWithOriginalImage:(UIImage *)image{
+    
+    UIGraphicsBeginImageContext(image.size);
+    
+    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    [path addClip];
+    
+    [image drawAtPoint:CGPointZero];
+    image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return image;
+    
+}
+
 @end

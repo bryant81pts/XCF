@@ -3,7 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,29 +16,29 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8HC-QL-2Gj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是小标题" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gde-tR-l7m">
-                        <rect key="frame" x="10" y="191" width="355" height="16"/>
+                        <rect key="frame" x="10" y="226" width="355" height="16"/>
                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是大标题" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQX-hO-KCh">
-                        <rect key="frame" x="10" y="161" width="355" height="20"/>
+                        <rect key="frame" x="10" y="196" width="355" height="20"/>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="CQX-hO-KCh" firstAttribute="top" secondItem="8HC-QL-2Gj" secondAttribute="bottom" constant="10" id="6z2-M1-Nfn"/>
                     <constraint firstAttribute="trailing" secondItem="CQX-hO-KCh" secondAttribute="trailing" constant="10" id="8mC-ZF-pvp"/>
                     <constraint firstAttribute="trailing" secondItem="Gde-tR-l7m" secondAttribute="trailing" constant="10" id="DGp-G9-drF"/>
-                    <constraint firstItem="8HC-QL-2Gj" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.6" id="GGf-VD-O99"/>
-                    <constraint firstItem="Gde-tR-l7m" firstAttribute="top" secondItem="CQX-hO-KCh" secondAttribute="bottom" constant="10" id="PHo-Re-3wO"/>
+                    <constraint firstItem="8HC-QL-2Gj" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="GGf-VD-O99"/>
+                    <constraint firstItem="CQX-hO-KCh" firstAttribute="top" secondItem="8HC-QL-2Gj" secondAttribute="bottom" constant="8" id="Ktx-65-eSd"/>
+                    <constraint firstItem="Gde-tR-l7m" firstAttribute="top" secondItem="CQX-hO-KCh" secondAttribute="bottom" constant="10" id="LWl-fe-UHt"/>
                     <constraint firstAttribute="trailing" secondItem="8HC-QL-2Gj" secondAttribute="trailing" id="UDK-4k-wmz"/>
-                    <constraint firstAttribute="bottom" secondItem="Gde-tR-l7m" secondAttribute="bottom" priority="250" constant="10" id="VXL-y1-6yK"/>
+                    <constraint firstAttribute="bottom" secondItem="Gde-tR-l7m" secondAttribute="bottom" constant="10" id="VXg-JL-abr"/>
                     <constraint firstItem="Gde-tR-l7m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VqY-a4-6c8"/>
                     <constraint firstItem="8HC-QL-2Gj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cWN-eM-nRU"/>
                     <constraint firstItem="CQX-hO-KCh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xTm-mA-EN2"/>
@@ -50,7 +50,7 @@
                 <outlet property="pictureImageView" destination="8HC-QL-2Gj" id="TD4-Ed-QoF"/>
                 <outlet property="title_Label" destination="CQX-hO-KCh" id="xWs-rW-1iO"/>
             </connections>
-            <point key="canvasLocation" x="335.5" y="403.5"/>
+            <point key="canvasLocation" x="263.5" y="396.5"/>
         </tableViewCell>
     </objects>
 </document>

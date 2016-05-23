@@ -28,10 +28,8 @@
     
     _item = item;
     
-    self.backgroundColor = [UIColor redColor];
-    
     self.title_Label.text = item.title_1st;
-    self.title_Label.text = item.title_2nd;
+    self.descriptionLabel.text = item.title_2nd;
     [self.pictureImageView sd_setImageWithURL:[NSURL URLWithString:item.image.url]];
 }
 

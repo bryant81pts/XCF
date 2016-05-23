@@ -15,7 +15,7 @@
 /** 标题->这个section的header*/
 @property (nonatomic, strong) NSString *title;
 /** 描述cell的模型(XCFCellItem)数组*/
-@property (nonatomic, strong) NSArray<XCFCellItem *> *items;
+@property (nonatomic, strong) NSMutableArray<XCFCellItem *> *items;
 /** issue对应的id*/
 @property (nonatomic, assign) NSInteger issue_id;
 /** 发布时间*/

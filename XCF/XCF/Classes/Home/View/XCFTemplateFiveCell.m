@@ -37,18 +37,32 @@
     _item = item;
     self.title_Label.text = item.title;
     self.descriptionLabel.text = item.desc;
+    self.ratingLabel.text = [NSString stringWithFormat:@"%ld人做过", item.n_cooked];
     
-    NSString *cookedStr = [NSString stringWithFormat:@"%@分-%ld人做过", item.score, item.n_cooked];
-    self.ratingLabel.text = cookedStr;
-    self.authorNameLabel.text = item.author.name;
+    if (item.n_cooked) {
+        self.ratingLabel.hidden = NO;
+        if (![item.score isEqualToString:@""]) {
+            CGFloat score = item.score.doubleValue;
+            self.ratingLabel.text = [NSString stringWithFormat:@"%.01f分·%ld人做过", score, item.n_cooked];
+        }
+        self.authorNameLabel.text = item.author.name;
+        
+    }else{
+        self.ratingLabel.hidden = YES;
+        
+    }
     [self.pictureImageView sd_setImageWithURL:[NSURL URLWithString:item.image.url]];
-    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:item.author.photo]];
+    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:item.author.photo] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+        image = [UIImage roundImageWithOriginalImage:image];
+        self.iconImageView.image = image;
+    }];
+    self.pictureImageView.clipsToBounds = YES;
     
 }
 
 - (void)awakeFromNib {
 
-    self.pictureImageView.clipsToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

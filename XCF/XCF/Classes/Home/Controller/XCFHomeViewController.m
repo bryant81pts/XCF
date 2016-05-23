@@ -15,27 +15,49 @@
 #import "XCFTemplateFourCell.h"
 #import "XCFTemplateFiveCell.h"
 #import "XCFTemplateSixCell.h"
+#import "XCFSectionHeader.h"
 #import "XCFCellContentItem.h"
 #import "XCFCellIssuesItem.h"
 #import "XCFCellIssuesContentsItem.h"
 #import "XCFCellItem.h"
 #import <AFNetworking/AFNetworking.h>
 #import <MJExtension/MJExtension.h>
-
-@interface XCFHomeViewController ()
-
-@property (nonatomic, strong) XCFCellContentItem *item;
-
-@end
-static NSString * const ID = @"ID";
+#import <MJRefresh/MJRefresh.h>
 
 static NSString * const templateOne = @"templateOne";
 static NSString * const templateTwo = @"templateTwo";
 static NSString * const templateFour = @"templateFour";
 static NSString * const templateFive = @"templateFive";
 static NSString * const templateSix = @"templateSix";
-static NSString * const header = @"headerID";
+static NSString * const sectionHeader = @"sectionHeaderID";
+@interface XCFHomeViewController ()
+
+@property (nonatomic, strong) XCFCellContentItem *item;
+
+@property (nonatomic, strong) NSMutableArray *cellIssuesItemsArray;
+
+@property (nonatomic, strong) AFHTTPSessionManager *manager;
+
+@end
+
 @implementation XCFHomeViewController
+
+- (NSMutableArray *)cellIssuesItemsArray{
+    
+    if (_cellIssuesItemsArray == nil) {
+        
+        _cellIssuesItemsArray = [NSMutableArray array];
+    }
+    return _cellIssuesItemsArray;
+}
+
+- (AFHTTPSessionManager *)manager{
+    
+    if (_manager == nil) {
+        _manager = [AFHTTPSessionManager manager];
+    }
+    return _manager;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,6 +66,7 @@ static NSString * const header = @"headerID";
     [self setupNavigationBar];
     [self setupTableHeaderView];
     [self setupTableView];
+    [self setupRefresh];
     [self loadData];
 }
 
@@ -57,9 +80,7 @@ static NSString * const header = @"headerID";
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    /** 添加占位视图接收searchBar的点击手势*/
     [self addPlaceholderView];
-    
 }
 
 - (void)addPlaceholderView{
@@ -100,31 +121,54 @@ static NSString * const header = @"headerID";
 - (void)setupTableView{
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    self.tableView.rowHeight = UITableViewAutomaticDimension;
-//    self.tableView.estimatedRowHeight = 200;
     self.tableView.showsVerticalScrollIndicator = NO;
-    
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XCFTemplateOneCell class]) bundle:nil] forCellReuseIdentifier:templateOne];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XCFTemplateTwoCell class]) bundle:nil] forCellReuseIdentifier:templateTwo];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XCFTemplateFourCell class]) bundle:nil] forCellReuseIdentifier:templateFour];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XCFTemplateFiveCell class]) bundle:nil] forCellReuseIdentifier:templateFive];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XCFTemplateSixCell class]) bundle:nil] forCellReuseIdentifier:templateSix];
-    [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:header];
+    [self.tableView registerClass:[XCFSectionHeader class] forHeaderFooterViewReuseIdentifier:sectionHeader];
     
 }
 
-/** 请求数据*/
+- (void)setupRefresh{
+    
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
+    [self.tableView.mj_header beginRefreshing];
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+    self.tableView.mj_footer.hidden = YES;
+}
+
 - (void) loadData{
-    //请求关于cell的数据
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager GET:XCFTableViewRequestURL parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
+    
+    [self.manager GET:XCFTableViewRequestURL parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
         
         self.item = [XCFCellContentItem mj_objectWithKeyValues:responseObject[@"content"]];
+        self.cellIssuesItemsArray = self.item.issues;
+        [self.tableView.mj_header endRefreshing];
+        self.tableView.mj_footer.hidden = NO;
+        [self.tableView reloadData];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [self.tableView.mj_header endRefreshing];
+        NSLog(@"%@",error);
+    }];
+}
+
+- (void) loadMoreData{
+    
+    [self.manager GET:XCFTableViewRequestURL parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
+        NSArray *temArray = [XCFCellIssuesItem mj_objectArrayWithKeyValuesArray:responseObject[@"content"][@"issues"]];
+        [self.cellIssuesItemsArray addObjectsFromArray:temArray];
+        [self.tableView.mj_footer endRefreshing];
         [self.tableView reloadData];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error);
+        [self.tableView.mj_footer endRefreshing];
     }];
+
+    
 }
 
 #pragma mark - tapPlaceholderView
@@ -154,18 +198,19 @@ static NSString * const header = @"headerID";
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return self.item.count;
+    return self.cellIssuesItemsArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return self.item.issues[section].items_count;
+    return [self.cellIssuesItemsArray[section] items_count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    XCFCellItem *item = self.item.issues[indexPath.section].items[indexPath.row];
+    XCFCellIssuesItem *issuesItem = self.cellIssuesItemsArray[indexPath.section];
+    XCFCellItem *item = issuesItem.items[indexPath.row];
     NSInteger template = item.cellTemplate;
     switch (template) {
         case 1:{
@@ -201,15 +246,23 @@ static NSString * const header = @"headerID";
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
     XCFCellIssuesItem *issuesItem = self.item.issues[section];
-    UITableViewHeaderFooterView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:header];
-    headerView.frame = CGRectMake(0, 0, ScreenWidth, 30);
-    headerView.backgroundColor = ThemeColor;
-    headerView.textLabel.text = issuesItem.title;
+    XCFSectionHeader *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:sectionHeader];
+    header.title = issuesItem.title;
+
+    return header;
+
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
-    return headerView;
+    return XCFSectionHeaderHeight;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
+    return 300.0;
 }
 
 
@@ -219,6 +272,12 @@ static NSString * const header = @"headerID";
     XCFCellIssuesContentsItem *contentsItem = item.contents;
     
     return contentsItem.cellHeight;
+    
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    (scrollView.contentOffset.y >= self.tableView.tableHeaderView.xcf_height - 64.0) ? (scrollView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0)) : (scrollView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0));
     
 }
 

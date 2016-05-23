@@ -16,6 +16,6 @@
 /** issues数组的字典个数*/
 @property (nonatomic, assign) NSInteger count;
 
-@property (nonatomic, strong) NSArray<XCFCellIssuesItem*> *issues;
+@property (nonatomic, strong) NSMutableArray<XCFCellIssuesItem*> *issues;
 
 @end

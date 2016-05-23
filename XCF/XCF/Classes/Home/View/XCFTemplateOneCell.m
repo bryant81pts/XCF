@@ -30,10 +30,11 @@
     self.title_Label.text = item.title;
     self.descriptionLabel.text = item.desc;
     [self.pictureImageView sd_setImageWithURL:[NSURL URLWithString:item.image.url]];
+    self.pictureImageView.clipsToBounds = YES;
 }
 
 - (void)awakeFromNib {
-    self.pictureImageView.clipsToBounds = YES;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

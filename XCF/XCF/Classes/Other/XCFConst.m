@@ -11,3 +11,5 @@ CGFloat const XCFHomeHeaderHeight = 286.0;
 CGFloat const XCFAuthorIconWH = 40.0;
 
 CGFloat const XCFMargin = 10.0;
+
+CGFloat const XCFSectionHeaderHeight = 50.0;

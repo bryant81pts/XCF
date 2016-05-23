@@ -35,6 +35,7 @@
 		0436D1A11CF149FA002CAB0A /* XCFTemplateSixCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436D19F1CF149FA002CAB0A /* XCFTemplateSixCell.m */; };
 		0436D1A21CF149FA002CAB0A /* XCFTemplateSixCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436D1A01CF149FA002CAB0A /* XCFTemplateSixCell.xib */; };
 		0436D1B51CF1AEFD002CAB0A /* XCFBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436D1B41CF1AEFD002CAB0A /* XCFBaseCell.m */; };
+		0436D1B81CF2A20E002CAB0A /* XCFSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436D1B71CF2A20E002CAB0A /* XCFSectionHeader.m */; };
 		044730161CD84BB100673F92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044730151CD84BB100673F92 /* main.m */; };
 		044730191CD84BB100673F92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044730181CD84BB100673F92 /* AppDelegate.m */; };
 		044730211CD84BB100673F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044730201CD84BB100673F92 /* Assets.xcassets */; };
@@ -111,6 +112,8 @@
 		0436D1A01CF149FA002CAB0A /* XCFTemplateSixCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCFTemplateSixCell.xib; sourceTree = "<group>"; };
 		0436D1B31CF1AEFD002CAB0A /* XCFBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFBaseCell.h; sourceTree = "<group>"; };
 		0436D1B41CF1AEFD002CAB0A /* XCFBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFBaseCell.m; sourceTree = "<group>"; };
+		0436D1B61CF2A20E002CAB0A /* XCFSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFSectionHeader.h; sourceTree = "<group>"; };
+		0436D1B71CF2A20E002CAB0A /* XCFSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFSectionHeader.m; sourceTree = "<group>"; };
 		044730111CD84BB100673F92 /* XCF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044730151CD84BB100673F92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		044730171CD84BB100673F92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 				0436D19E1CF149FA002CAB0A /* XCFTemplateSixCell.h */,
 				0436D19F1CF149FA002CAB0A /* XCFTemplateSixCell.m */,
 				0436D1A01CF149FA002CAB0A /* XCFTemplateSixCell.xib */,
+				0436D1B61CF2A20E002CAB0A /* XCFSectionHeader.h */,
+				0436D1B71CF2A20E002CAB0A /* XCFSectionHeader.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -672,6 +677,7 @@
 				0415C5671CF0184100B8DF73 /* XCFImageItem.m in Sources */,
 				04212FD81CE305AB00D64840 /* XCFConst.m in Sources */,
 				04DAC29D1CEAE96000BA0A72 /* XCFHeaderViewController.m in Sources */,
+				0436D1B81CF2A20E002CAB0A /* XCFSectionHeader.m in Sources */,
 				046238351CDCAC3E00D5B6C5 /* XCFNavigationController.m in Sources */,
 				0415C49A1CEB3CCA00B8DF73 /* XCFTemplateTwoCell.m in Sources */,
 				6B7E84161CE4D140006D7903 /* XCFNavButtonItem.m in Sources */,

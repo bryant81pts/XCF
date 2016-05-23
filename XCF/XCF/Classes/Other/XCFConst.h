@@ -17,3 +17,6 @@ UIKIT_EXTERN CGFloat const XCFAuthorIconWH;
 /** 通用margin*/
 UIKIT_EXTERN CGFloat const XCFMargin;
 
+/** sectionHeader高度*/
+UIKIT_EXTERN CGFloat const XCFSectionHeaderHeight;
+
